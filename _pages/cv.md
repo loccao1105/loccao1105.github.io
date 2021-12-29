@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+***
+
 Education
 ------
 * B.S. in [ShenZhen University (深圳大学)](https://www.szu.edu.cn/), ShenZhen, CHN, 2016-2020
