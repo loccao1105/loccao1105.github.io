@@ -13,7 +13,7 @@ redirect_from:
 
 Education
 ------
-* B.S. in [ShenZhen University (深圳大学)](https://www.szu.edu.cn/), ShenZhen, CHN, 2016-2020
+* B.S. in [Shenzhen University (深圳大学)](https://www.szu.edu.cn/), Shenzhen, CHN, 2016-2020
   * Major in Electronic and Information Engineering
   * Double Major in Statistics
 * M.S. in [Xiamen University (厦门大学)](https://www.xmu.edu.cn/), Xiamen, CHN, 2020-2023
