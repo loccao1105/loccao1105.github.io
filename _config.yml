@@ -9,8 +9,8 @@
 locale                   : "en-US"
 title                    : "Hao Liang (梁浩)"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Hao Liang"
+description              : &description "A machine learning, signal processing and statistic fan"
 url                      : https://hauliang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "HauLiang/hauliang.github.io"
@@ -81,11 +81,11 @@ analytics:
 # Site Author
 author:
   name             : "Hao Liang"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  avatar           : "myprofile.png"
+  bio              : "A machine learning, signal processing and statistic fan"
+  location         : "Xiamen, CHN"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+ # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=PtWSpXIAAAAJ&hl=zh-CN"
   email            : "haoliang@stu.xmu.edu.cn" 
   researchgate     : "https://www.researchgate.net/profile/Hao-Liang-61" # example: "https://www.researchgate.net/profile/yourprofile"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+ # twitter          : "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
