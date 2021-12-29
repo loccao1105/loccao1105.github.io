@@ -10,13 +10,18 @@ redirect_from:
 {% include base_path %}
 
 Education
-======
-* B.S. in ShenZhen, ShenZhen University, CHN, 2016-2020
-* M.S. in Xiamen, Xiamen University, CHN, 2020-2023
+------
+* B.S. in [ShenZhen University (深圳大学)](https://www.szu.edu.cn/), ShenZhen, CHN, 2016-2020
+  * Major in Electronic and Information Engineering
+  * Double Major in Statistics
+* M.S. in [Xiamen University (厦门大学)](https://www.xmu.edu.cn/), Xiamen, CHN, 2020-2023
+  * Major in Signal and Information Processing
+  * School of Informatics, [Smart DSP Lab](https://xmu-smartdsp.github.io/index.html)
+  * Advised by [Xinghao Ding](https://scholar.google.com/citations?user=k5hVBfMAAAAJ&hl=zh-CN&oi=ao)
 * Ph.D in xx, xx University, 2023 (expected)
 
 Work experience
-======
+------
 * Summer 2015: Research Assistant
   * Github University
   * Duties included: Tagging issues
@@ -28,7 +33,7 @@ Work experience
   * Supervisor: Professor Hub
   
 Skills
-======
+------
 * Skill 1
 * Skill 2
   * Sub-skill 2.1
@@ -37,23 +42,23 @@ Skills
 * Skill 3
 
 Publications
-======
+------
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
 Talks
-======
+------
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
 
 Teaching
-======
+------
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
 Service and leadership
-======
+------
 * Currently signed in to 43 different slack teams
