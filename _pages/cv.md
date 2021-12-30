@@ -20,7 +20,7 @@ Education
   * Major in Signal and Information Processing
   * School of Informatics, [Smart DSP Lab](https://xmu-smartdsp.github.io/index.html)
   * Advised by Prof. [Xinghao Ding](https://scholar.google.com/citations?user=k5hVBfMAAAAJ&hl=zh-CN&oi=ao) (co-advised by [Xiaotong Tu](https://tormii.github.io/))
-* Ph.D in xx, xx University, 2023 (expected)
+* Ph.D in xx,1 xx University, 2023 (expected)
 
 Awards & Honors
 ------
