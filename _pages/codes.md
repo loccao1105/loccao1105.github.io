@@ -5,6 +5,8 @@ title: "Codes"
 author_profile: true
 ---
 
+***
+
 ## Locations of key files/directories
 
 * Basic config options: _config.yml
