@@ -25,13 +25,7 @@ Education
 Awards & Honors
 ------
 * Summer 
-* Fall 
-Awards & Honors
-------
-
-* Summer 
-* Fall 
-
+* Fall
 ## Skills
 
 * **Programming:** Matlab, LaTex, Python, Pytorch
