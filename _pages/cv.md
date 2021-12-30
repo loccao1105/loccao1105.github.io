@@ -26,8 +26,9 @@ Awards & Honors
 ------
 * Summer 
 * 8
-## Skills
 
+Skills
+------
 * **Programming:** Matlab, LaTex, Python, Pytorch
 * **Languages:** Chinese, English
 * **Software:** Office
