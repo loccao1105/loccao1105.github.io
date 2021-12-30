@@ -1,4 +1,5 @@
 ---
+layout: archive
 permalink: /codes/
 title: "Codes"
 author_profile: true
