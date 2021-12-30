@@ -20,6 +20,6 @@ Many people use a git client to create files on their local computer and then pu
 
 For more
 ------
-Should you have any further interests or questions, please feel free to contact me.
+Should you have any further interests or questions, please feel free to contact me ☺.
 
 *(__Email__: haoliang@stu.xmu.edu.cn)*
