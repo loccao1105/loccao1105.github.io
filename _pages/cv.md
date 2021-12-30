@@ -22,7 +22,7 @@ Education
   * Advised by Prof. [Xinghao Ding](https://scholar.google.com/citations?user=k5hVBfMAAAAJ&hl=zh-CN&oi=ao) (co-advised by [Xiaotong Tu](https://tormii.github.io/))
 * Ph.D in xx, xx University, 2023 (expected)
 
-Work experience
+Awards & Honors
 ------
 * Summer 2015: Research Assistant
   * Github University
@@ -48,19 +48,3 @@ Publications
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-
-Talks
-------
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-
-Teaching
-------
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
-Service and leadership
-------
-* Currently signed in to 43 different slack teams
