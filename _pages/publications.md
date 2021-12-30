@@ -47,6 +47,8 @@ function toggleBibtex(articleid) {
 
 ***
 
+</ol>
+
 ## Journal Publications
 
 <!-- Item: wu2017data -->
@@ -72,8 +74,9 @@ Shuming Wu, Xuefeng Chen, <b>Zhibin Zhao</b> and Ruonan Liu<br>
   organization={IEEE}
 }
 </pre></div>
-
 </li>
+
+
 
 
 <li ><p>
@@ -104,3 +107,7 @@ Shuming Wu, Xuefeng Chen, <b>Zhibin Zhao</b> and Ruonan Liu<br>
 
 
 ## Conference Publications
+
+
+
+</ol>
