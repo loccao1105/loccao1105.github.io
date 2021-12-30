@@ -1,4 +1,4 @@
-Github Pages of Hao Liang [(https://hauliang.github.io/)](https://hauliang.github.io/ "https://hauliang.github.io/"), forked from [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io).
+Home Pages of Hao Liang [(https://hauliang.github.io/)](https://hauliang.github.io/ "https://hauliang.github.io/"), forked from [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io).
 
 ***
 
