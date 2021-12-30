@@ -49,6 +49,58 @@ function toggleBibtex(articleid) {
 
 ## Journal Publications
 
+<!-- Item: wu2017data -->
+<li ><p>
+<b>Data-driven discriminative K-SVD for bearing fault diagnosis</b><br>
+Shuming Wu, Xuefeng Chen, <b>Zhibin Zhao</b> and Ruonan Liu<br>
+
+<i>2017 Prognostics and System Health Management Conference <b>(PHM-Harbin)</b></i>,
+
+2017.<br>
+<a href="javascript:toggleBibtex('wu2017data')" class="textlink">[bibtex]</a>
+<a href="https://ieeexplore.ieee.org/abstract/document/8079179" class="textlink" target="_blank">[link]</a>
+</p>
+
+<div id="bib_wu2017data" class="bibtex noshow">
+<pre>
+@inproceedings{wu2017data,
+  title={Data-driven discriminative K-SVD for bearing fault diagnosis},
+  author={Wu, Shuming and Chen, Xuefeng and Zhao, Zhibin and Liu, Ruonan},
+  booktitle={2017 Prognostics and System Health Management Conference (PHM-Harbin)},
+  pages={1--6},
+  year={2017},
+  organization={IEEE}
+}
+</pre></div>
+
+</li>
+
+
+<li ><p>
+<b>Data-driven discriminative K-SVD for bearing fault diagnosis</b><br>
+Shuming Wu, Xuefeng Chen, <b>Zhibin Zhao</b> and Ruonan Liu<br>
+
+<i>2017 Prognostics and System Health Management Conference <b>(PHM-Harbin)</b></i>,
+
+2017.<br>
+<a href="javascript:toggleBibtex('wu2017data')" class="textlink">[bibtex]</a>
+<a href="https://ieeexplore.ieee.org/abstract/document/8079179" class="textlink" target="_blank">[link]</a>
+</p>
+
+<div id="bib_wu2017data" class="bibtex noshow">
+<pre>
+@inproceedings{wu2017data,
+  title={Data-driven discriminative K-SVD for bearing fault diagnosis},
+  author={Wu, Shuming and Chen, Xuefeng and Zhao, Zhibin and Liu, Ruonan},
+  booktitle={2017 Prognostics and System Health Management Conference (PHM-Harbin)},
+  pages={1--6},
+  year={2017},
+  organization={IEEE}
+}
+</pre></div>
+
+</li>
+
 
 
 ## Conference Publications
