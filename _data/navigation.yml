@@ -6,7 +6,7 @@ main:
   - title: "Codes"
     url: /codes/  
       
-  title: "Reading List"
+  - title: "Reading List"
     url: /read-list/
 
   # - title: "Talks"
