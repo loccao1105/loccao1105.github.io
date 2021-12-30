@@ -13,7 +13,7 @@ redirect_from:
 
 Education
 ------
-* M.S. in [Xiamen University (厦门大学)](https://www.xmu.edu.cn/), Xiamen, CHN, 2020-2023
+* M.S. in [Xiamen University (厦门大学)](https://www.xmu.edu.cn/), Xiamen, CHN, 2020-2023 (expected)
   * Major in Signal and Information Processing
   * [School of Informatics](https://informatics.xmu.edu.cn/), [Smart DSP Lab](https://xmu-smartdsp.github.io/index.html)
   * Advised by Prof. [Xinghao Ding](https://scholar.google.com/citations?user=k5hVBfMAAAAJ&hl=zh-CN&oi=ao) (co-advised by [Xiaotong Tu](https://tormii.github.io/))
