@@ -1,4 +1,5 @@
 ---
+layout: archive
 permalink: /read-list/
 title: "Reading List"
 author_profile: true
