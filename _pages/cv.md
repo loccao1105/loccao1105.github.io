@@ -36,7 +36,7 @@ Awards & Honors
   
 Skills
 ------
-* **Programming:** Matlab, Python, Pytorch, LaTex
+* **Programming:** Matlab, LaTex, Python, Pytorch
 * **Languages:** Chinese, English
 * **Software:** Office
 
