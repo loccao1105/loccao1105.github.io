@@ -47,12 +47,11 @@ function toggleBibtex(articleid) {
 
 ***
 
-</ol>
-
 ## Journal Publications
 
-<!-- Item: wu2017data -->
-<li ><p>
+<ol>
+
+<li><p>
 <b>Data-driven discriminative K-SVD for bearing fault diagnosis</b><br>
 Shuming Wu, Xuefeng Chen, <b>Zhibin Zhao</b> and Ruonan Liu<br>
 
@@ -104,10 +103,9 @@ Shuming Wu, Xuefeng Chen, <b>Zhibin Zhao</b> and Ruonan Liu<br>
 
 </li>
 
-
+</ol>
 
 ## Conference Publications
 
 
 
-</ol>
