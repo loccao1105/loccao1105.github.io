@@ -15,7 +15,11 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
 ## Journal Publications
 
 <ol>
-<li><p>[Ding, Xinghao and Liang, Hao and Jakobsson, Andreas and Tu, Xiaotong and Huang, Yue. "High-Resolution Source Localization Exploiting the Sparsity of the Beamforming Map", *Signal Processing*, 2022.](https://www.sciencedirect.com/science/article/pii/S016516842100414X)
+<li><p> <b>High-Resolution Source Localization Exploiting the Sparsity of the Beamforming Map</b><br>
+Ding, Xinghao and <b>Liang, Hao</b> and Jakobsson, Andreas and Tu, Xiaotong and Huang, Yue<br>
+<i>Signal Processing</i>, 2022 <br>
+<a href="https://www.sciencedirect.com/science/article/pii/S016516842100414X" class="textlink" target="_blank">[pdf]</a>
+<a href="https://doi.org/10.1016/j.nanoen.2021.106698" class="textlink" target="_blank">[codes]</a>
 </p>
 </li>
 
