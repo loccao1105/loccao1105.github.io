@@ -24,8 +24,8 @@ Education
 
 Awards & Honors
 ------
-* Summer 
-* 8
+* **Outstanding Graduate Students**, Xiamen University, 2021
+* **Outstanding Graduates**, Shenzhen University, 2020
 
 Skills
 ------
