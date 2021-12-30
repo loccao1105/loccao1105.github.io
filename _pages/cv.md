@@ -24,16 +24,9 @@ Education
 
 Awards & Honors
 ------
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
+* Fall 
 Skills
 ------
 * **Programming:** Matlab, LaTex, Python, Pytorch
