@@ -25,9 +25,9 @@ Education
 Awards & Honors
 ------
 * Summer 
-
 * Fall 
-Skills
+## Skills
+
 ------
 * **Programming:** Matlab, LaTex, Python, Pytorch
 * **Languages:** Chinese, English
