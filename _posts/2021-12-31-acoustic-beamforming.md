@@ -1,7 +1,7 @@
 ---
 title: 'Papers for Acoustic Beamforming (2021)'
 date: 2021-12-31
-permalink: /posts/2021/acoustic-beamforming/
+permalink: /read-list/2021/acoustic-beamforming/
 tags:
   - cool posts
   - category1
