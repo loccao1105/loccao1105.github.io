@@ -1,6 +1,7 @@
 ---
 title: 'Papers for Statistical & Optimization (2021)'
 date: 2021-12-31
+excerpt: "My reading list for <b>statistical & optimization</b> papers in 2021."
 permalink: /read-list/2021/statistical-optimization/
 tags:
   - cool posts
