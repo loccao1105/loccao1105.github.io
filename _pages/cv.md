@@ -36,5 +36,5 @@ Publications
 ------
 <ol>
 <li><p> <b>High-Resolution Source Localization Exploiting the Sparsity of the Beamforming Map</b><br>
-Ding, Xinghao and <b>Liang, Hao</b> and Jakobsson, Andreas and Tu, Xiaotong and Huang, Yue<br>
+Ding, Xinghao and <b>Liang, Hao</b> and Jakobsson, Andreas and Tu, Xiaotong* and Huang, Yue<br>
 <i>Signal Processing</i>, 2022 <br>
