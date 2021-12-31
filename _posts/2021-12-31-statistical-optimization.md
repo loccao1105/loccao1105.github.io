@@ -1,7 +1,7 @@
 ---
 title: 'Papers for Statistical & Optimization (2021)'
 date: 2021-12-31
-permalink: /posts/2021/statistical-optimization/
+permalink: /read-list/2021/statistical-optimization/
 tags:
   - cool posts
   - category1
