@@ -1,6 +1,6 @@
 ---
 title: 'Papers for Deep Learning (2021)'
-date: 2015-08-14
+date: 2021-12-31
 permalink: /posts/2021/deep-learning/
 tags:
   - cool posts
