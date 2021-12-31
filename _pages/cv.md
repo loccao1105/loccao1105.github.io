@@ -30,7 +30,7 @@ Skills
 ------
 * **Programming:** Matlab, LaTex, Python, Pytorch
 * **Languages:** Chinese, English
-* **Software:** Office
+* **Software:** Office, Endnote
 
 Publications
 ------
