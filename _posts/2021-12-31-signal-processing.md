@@ -1,7 +1,7 @@
 ---
 title: 'Papers for Signal Processing (2021)'
 date: 2021-12-31
-permalink: /posts/2021/signal-processing/
+permalink: /read-list/2021/signal-processing/
 tags:
   - cool posts
   - category1
