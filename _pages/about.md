@@ -16,7 +16,7 @@ I am currently a graduate student in the [School of Informatics](https://informa
 
 Research interests
 ------
-My research interests lie in signal processing and machine learning, and in particular sparse optimization and model-driven deep learning
+My research interests lie in **non-stationary signal processing** and **machine learning**, and in particular **sparse optimization** and **model-driven deep learning**
 
 Hobbies
 ------
