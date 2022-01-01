@@ -21,6 +21,13 @@ Education
   * Bachelor of Engineering (B.E.), majoring in [Electronic Information Engineering](https://hauliang.github.io/files/B-E.pdf), [College of Electronics and Information Engineering](https://en.szu.edu.cn/info/1017/1028.htm)
   * Bachelor of Science (B.S.), double majoring in [Statistics](https://hauliang.github.io/files/B-S.pdf), [College of Mathematics and Statistics](https://en.szu.edu.cn/info/1017/1027.htm)
 
+Academic records
+------
+* Bachelor in [Shenzhen University (深圳大学)](https://www.szu.edu.cn/), Shenzhen, CHN, 2016-2020
+  * GPA: 3.86/4.5 [[details (EN)]]() [[details (CN)]]() 
+  * Centesimal grade average: 89.2 [[details (EN)]]() [[details (CN)]]() 
+  * Rank: [6/155](https://hauliang.github.io/files/rank.pdf) 
+
 Awards & Honors
 ------
 * **Outstanding Graduate Students**, Xiamen University, 2021
