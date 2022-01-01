@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hao Liang (梁浩)"
+title: "Home Pages of Hao Liang"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
