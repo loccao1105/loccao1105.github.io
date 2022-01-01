@@ -27,9 +27,9 @@ Academic records
   * GPA: 3.80/4.0
   * Rank: 1/104
 * Bachelor in [Shenzhen University (深圳大学)](https://www.szu.edu.cn/), Shenzhen, CHN
-  * GPA: 3.86/4.5 [[details (EN)]](https://hauliang.github.io/files/GPA-EN.pdf) [[details (CN)]](https://hauliang.github.io/files/GPA-CN.pdf) 
-  * Centesimal grade average: 89.2 [[details (EN)]](https://hauliang.github.io/files/average-grade-EN.pdf) [[details (CN)]](https://hauliang.github.io/files/average-grade-CN.pdf) 
-  * Rank: [6/155](https://hauliang.github.io/files/rank.pdf) 
+  * GPA: 3.86/4.5 [[details (EN)]](https://hauliang.github.io/files/SZU-GPA-EN.pdf) [[details (CN)]](https://hauliang.github.io/files/SZU-GPA-CN.pdf) 
+  * Centesimal grade average: 89.2 [[details (EN)]](https://hauliang.github.io/files/SZU-average-grade-EN.pdf) [[details (CN)]](https://hauliang.github.io/files/SZU-average-grade-CN.pdf) 
+  * Rank: [6/155](https://hauliang.github.io/files/SZU-rank.pdf) 
 
 Awards & Honors
 ------
