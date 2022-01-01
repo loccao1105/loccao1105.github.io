@@ -12,7 +12,7 @@ redirect_from:
 
 About me
 ------
-I am currently a graduate student in the [School of Informatics](https://informatics.xmu.edu.cn/), [Xiamen University](https://www.xmu.edu.cn/), CHN, and also a member of [Smart DSP Lab](https://xmu-smartdsp.github.io/index.html), advised by [Xinghao Ding](https://scholar.google.com/citations?user=k5hVBfMAAAAJ&hl=zh-CN&oi=ao) and [Xiaotong Tu](https://tormii.github.io/). I received my Bachelor's degrees in [Electronic Information Engineering](http://hauliang.github.io/files/B-E.pdf) and [Statistics](http://hauliang.github.io/files/B-S.pdf) from [Shenzhen University](https://www.szu.edu.cn/), Shenzhen, CHN.
+I am currently a graduate student in the [School of Informatics](https://informatics.xmu.edu.cn/), [Xiamen University](https://www.xmu.edu.cn/), CHN, and also a member of [Smart DSP Lab](https://xmu-smartdsp.github.io/index.html), advised by [Xinghao Ding](https://scholar.google.com/citations?user=k5hVBfMAAAAJ&hl=zh-CN&oi=ao) and [Xiaotong Tu](https://tormii.github.io/). I received my Bachelor's degrees in [Electronic Information Engineering](https://hauliang.github.io/files/B-E.pdf) and [Statistics](https://hauliang.github.io/files/B-S.pdf) from [Shenzhen University](https://www.szu.edu.cn/), Shenzhen, CHN.
 
 Research interests
 ------
