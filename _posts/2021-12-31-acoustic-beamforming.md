@@ -4,9 +4,8 @@ date: 2021-12-31
 excerpt: "My reading list for <b>acoustic beamforming</b> papers in 2021."
 permalink: /read-list/2021/acoustic-beamforming/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - acoustic imaging
+  - beamforming
 ---
 
 My reading list for acoustic beamforming papers in 2021
