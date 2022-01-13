@@ -35,14 +35,14 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_1"> node2vec: Scalable feature learning for networks (2016, KDD) </span>
-***
+
 
 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_2"> Link prediction via subgraph embedding-based convex matrix completion (2018, AAAI)</span>
-***
+
 21312312
 
 
@@ -50,28 +50,28 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_3"> Weisfeiler-lehman neural machine for link prediction (2017, KDD)</span>
-***
+
 
 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_4"> Link prediction based on graph neural networks (2018, NIPS)</span>
-***
+
 
 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_5"> Understanding negative sampling in graph representation learning (2020, KDD)</span>
-***
+
 
 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_6"> Bursting the filter bubble: Fairness-aware network link prediction (2020, AAAI)</span>
-***
+
 
 
 
@@ -82,7 +82,7 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_reference"> References</span>
-***
+
 [[1] Grover, Aditya and Leskovec, Jure. "node2vec: Scalable feature learning for networks". *Proceedings of the 22nd ACM SIGKDD international conference on Knowledge discovery and data mining*, 2016.](https://dl.acm.org/doi/abs/10.1145/2939672.2939754?casa_token=YaQ6zJHC0tEAAAAA:TyGhi4mFoIITlQkON047aJq7s0p-u5eUDt0BXzcE5U8DY_B_mD0LLUjWlYX_C5UnqeNYgwlsFRuVbw)
 
 [[2] Cao, Zhu and Wang, Linlin and De Melo, Gerard. "Link prediction via subgraph embedding-based convex matrix completion". *Proceedings of the AAAI Conference on Artificial Intelligence*, 2018.](https://ojs.aaai.org/index.php/AAAI/article/view/11655)
