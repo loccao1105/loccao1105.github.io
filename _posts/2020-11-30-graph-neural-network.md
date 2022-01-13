@@ -43,7 +43,7 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 ## <span id="jump_2"> Link prediction via subgraph embedding-based convex matrix completion (2018, AAAI)</span>
 ***
-
+21312312
 
 
 
