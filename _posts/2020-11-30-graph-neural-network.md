@@ -9,10 +9,11 @@ tags:
 ---
 
 
-<hr style="height:5px;border:none;border-top:5px solid #555555;" />
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
+
 My 2020 paper reading list in graph neural network (GNN), with special emphasis on **graph embedding**, **alignment** and **link prediction**. 
 
-<hr style="height:5px;border:none;border-top:5px solid #555555;" />
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 # Paper List
 
@@ -31,14 +32,14 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 * [References](#jump_reference)
 
 
-<hr style="height:5px;border:none;border-top:5px solid #555555;" />
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_1"> node2vec: Scalable feature learning for networks (2016, KDD) </span>
 ***
 
 
 
-<hr style="height:5px;border:none;border-top:5px solid #555555;" />
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_2"> Link prediction via subgraph embedding-based convex matrix completion (2018, AAAI)</span>
 ***
@@ -46,28 +47,28 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 
 
-<hr style="height:5px;border:none;border-top:5px solid #555555;" />
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_3"> Weisfeiler-lehman neural machine for link prediction (2017, KDD)</span>
 ***
 
 
 
-<hr style="height:5px;border:none;border-top:5px solid #555555;" />
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_4"> Link prediction based on graph neural networks (2018, NIPS)</span>
 ***
 
 
 
-<hr style="height:5px;border:none;border-top:5px solid #555555;" />
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_5"> Understanding negative sampling in graph representation learning (2020, KDD)</span>
 ***
 
 
 
-<hr style="height:5px;border:none;border-top:5px solid #555555;" />
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_6"> Bursting the filter bubble: Fairness-aware network link prediction (2020, AAAI)</span>
 ***
@@ -78,7 +79,7 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 
 
-<hr style="height:5px;border:none;border-top:5px solid #555555;" />
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_reference"> References</span>
 ***
