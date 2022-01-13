@@ -36,7 +36,13 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 ## <span id="jump_1"> node2vec: Scalable feature learning for networks (2016, KDD) </span>
 
+&emsp;Graph embedding via representation learning (node -> vector).
 
+&emsp;This paper proposed a flexible method to learn domain information, in which different types of domains can be learned through parameter adjustment, and thus a smooth interpolation may be implemented between deep search and wide search.
+
+&emsp;Specifically, the **second-order Markov random walk** may be introduced to obtain the **sequence of node random walk**, which may then **be treated as a special sentence**. Thus, the **skip-gram model** under the negative sampling strategy may be used to learn the node representation.
+
+&emsp;After the node representation is obtained, the feature representation of its edge may then be obtained by operating the transformation, which can be used to link prediction by using a classification model.
 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
