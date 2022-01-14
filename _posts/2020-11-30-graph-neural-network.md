@@ -68,8 +68,17 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 ## <span id="jump_3"> Weisfeiler-lehman neural machine for link prediction (2017, KDD)</span>
 
+&emsp;Link prediction via **first or high-order structural information**.
 
+&emsp;Traditional methods, such as the neighbor-based method, use the **first or high-order information of the graph to judge the existence of links**. In this paper, the authors want to **learn these features automatically** by network without artificial definitions. The steps are following:
 
+&emsp;1) **A closed sub-graph of each pair of links** is defined. Each sub-graph has fixed $K$ (a hyperparameter) nodes.
+
+&emsp;2) The proposed **palette-WL algorithm** may be used to **sort the nodes** of the sub-graph, which ensures that the vertex sorting method is consistent in different sub-graphs and similar nodes have the same ordering.
+
+&emsp;3) Extract the **upper triangular of the adjacency matrix** of each sub-graph. Note that here is a relaxed adjacency matrix, not all 0 or 1, but relax some 0 parts to part of the distance. Also, remove the adjacent part of the two points corresponding to the link to be predicted.
+
+&emsp;4) **Straighten the extracted upper triangle**, and put it into the neural network to train the classifier.
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
