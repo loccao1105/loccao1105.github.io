@@ -36,7 +36,7 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 ## <span id="jump_1"> node2vec: Scalable feature learning for networks (2016, KDD) </span>
 
-&emsp;Graph embedding via representation learning (node -> vector).
+&emsp;Graph embedding via **representation learning** (node -> vector).
 
 &emsp;This paper proposed a flexible method to learn domain information, in which different types of domains can be learned through parameter adjustment, and thus a smooth interpolation may be implemented between depth first search and breadth first search.
 
@@ -49,7 +49,7 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 ## <span id="jump_2"> Link prediction via subgraph embedding-based convex matrix completion (2018, AAAI)</span>
 
-&emsp;Link prediction via representation learning (better for heterogeneous graphs).
+&emsp;Link prediction via **representation learning** (better for heterogeneous graphs).
 
 &emsp;The main idea of this paper is to **introduce sub-graphs for node embedding**. Specifically, **sub-graph embedding** and **convex matrix completion** is introduced, and SVD decomposition may be used to replace the Skip-Gram model under negative sampling (supported by theoretical proof). The steps are following:
 
