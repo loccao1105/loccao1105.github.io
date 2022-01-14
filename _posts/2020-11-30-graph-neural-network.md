@@ -38,9 +38,9 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 &emsp;Graph embedding via representation learning (node -> vector).
 
-&emsp;This paper proposed a flexible method to learn domain information, in which different types of domains can be learned through parameter adjustment, and thus a smooth interpolation may be implemented between deep search and wide search.
+&emsp;This paper proposed a flexible method to learn domain information, in which different types of domains can be learned through parameter adjustment, and thus a smooth interpolation may be implemented between depth first search and breadth first search.
 
-&emsp;Specifically, the **second-order Markov random walk** may be introduced to obtain the **sequence of node random walk**, which may then **be treated as a special sentence**. Thus, the **skip-gram model** under the negative sampling strategy may be used to learn the node representation.
+&emsp;Specifically, the **second-order Markov random walk** may be introduced to obtain the **sequence of node random walk**, which may then **be treated as a special sentence**. Thus, the **Skip-Gram model** under the negative sampling strategy may be used to learn the node representation.
 
 &emsp;After the node representation is obtained, the feature representation of its edge may then be obtained by operating the transformation, which can be used to link prediction by using a classification model.
 
@@ -49,8 +49,19 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 ## <span id="jump_2"> Link prediction via subgraph embedding-based convex matrix completion (2018, AAAI)</span>
 
-21312312
+&emsp;Link prediction via representation learning (better for heterogeneous graphs).
 
+&emsp;The main idea of this paper is to **introduce sub-graphs for node embedding**. Specifically, **sub-graph embedding** and **convex matrix completion** is introduced, and SVD decomposition may be used to replace the Skip-Gram model under negative sampling (supported by theoretical proof). The steps are following:
+
+&emsp;1) **Retrieve sub-graphs**: The sub-graphs with different depths of each vertex may be searched by using the breadth first search. Then, the **sub-graphs can be regarded as new vertices**, and their "context" can be defined. Thus, a new graph $G$ can be constructed, with sub-graphs as vertices and edges formed by whether the two sub-graphs are contexts.
+
+&emsp;2) **Calculate the $PPMI$ matrix**: The $PPMI$ matrix of graph $G$ is defined as $M=(A+A^2)/2$.
+
+&emsp;3) **Matrix completion**: **Learning the low-rank representation of $M$** can remove the influence of the white noise, and thus the soft threshold algorithm may be introduced to complete the matrix $M$, obtaining the matrix $W$.
+
+&emsp;4) **Sub-graph embedding**: After obtaining $W$, it can be regarded as the embedding matrix of the sub-graphs, and **its rows can be used to represent the corresponding sub-graphs**. Then, the sub-graph vectors of different depths of a vertex may be spliced, forming the embedding of this vertex.
+
+&emsp;5) **Link prediction**: The **cosine similarity** between the two vetrice vectors is used to classification -- whether the link is exist.
 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
