@@ -86,13 +86,13 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 &emsp;Link prediction via **first or high-order structural information**.
 
-&emsp;This work builds upon the previours paper ([Weisfeiler-lehman neural machine for link prediction, 2017, KDD](#jump_3)). The weakness of the previous paper: the sub-graph is restricted to have $K$ nodes, which may loss the ability to catch structural information; the embedding  is learned from adjacency matrix, which is unable to exploit node feature assistance. This paper has made some enhancement, mainly:
+&emsp;This work builds upon the previours paper ([*Weisfeiler-lehman neural machine for link prediction, 2017, KDD*](#jump_3)). The weakness of the previous paper: the sub-graph is restricted to have $K$ nodes, which may loss the ability to catch structural information; the embedding  is learned from adjacency matrix, which is unable to exploit node feature assistance. This paper has made some enhancement, mainly:
 
 &emsp;1) **GNN** is introduced to replace the fully connected neural network; 2) The embedding is learned by **exploiting the sub-graph structure and node features**.
 
 &emsp;Link prediction is implemented by **learning local sub-graphs combined with node embedding information**. In this paper, each local sub-graph is considered corresponds to a pair of nodes.
 
-&emsp;First, it is proved theoretically that local sub-graphs, which contain rich information to predict links, can **approach to high-order features** with small errors. The structural node label information can be integrate by using the dual-radius node labeling method, and then **GNN** is introduced to **learn node features** implicitly or implicitly. In the training of each local sub-graph GNN, the negative sample strategy may be adopted, and some non-existing edges are also added for robust training. Finally, **GNN** is employed to **perform classification training**, and thus implements the link prediction. The specific detail of graph classification process can be found in [[5]](#jump_ref5) (An end-to-end deep learning architecture for graph classification, 2018, AAAI).
+&emsp;First, it is proved theoretically that local sub-graphs, which contain rich information to predict links, can **approach to high-order features** with small errors. The structural node label information can be integrate by using the dual-radius node labeling method, and then **GNN** is introduced to **learn node features** implicitly or implicitly. In the training of each local sub-graph GNN, the negative sample strategy may be adopted, and some non-existing edges are also added for robust training. Finally, **GNN** is employed to **perform classification training**, and thus implements the link prediction. The specific detail of graph classification process can be found in [[5]](#jump_ref5) (*An end-to-end deep learning architecture for graph classification, 2018, AAAI*).
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
