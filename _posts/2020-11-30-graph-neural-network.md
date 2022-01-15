@@ -4,8 +4,8 @@ date: 2020-11-30
 excerpt: "My reading list for <b>graph neural network</b> papers in 2020."
 permalink: /read-list/2020/graph-neural-network/
 tags:
-  - graph embedding
-  - link prediction
+  - Graph Embedding
+  - Link Prediction
 ---
 
 
