@@ -14,6 +14,11 @@ Codes for Papers
 ------
 * [FFT-DFISTA & FFT-DADMM](https://github.com/HauLiang/FFT-DFISTA-and-FFT-DADMM) for the ["High-Resolution Source Localization Exploiting the Sparsity of the Beamforming Map"](https://www.sciencedirect.com/science/article/pii/S016516842100414X)
 
+Codes for LaTex Template
+------
+* LaTex Template for [Author Rebuttal to Paper Reviewers (Conference)](https://github.com/HauLiang/Rebuttal-to-Reviewer)
+* LaTex Template for [Reviewer View Manuscripts and Score](https://github.com/HauLiang/Review-Template)
+
 
 Others
 ------
