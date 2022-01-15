@@ -116,9 +116,17 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 ## <span id="jump_6"> Bursting the filter bubble: Fairness-aware network link prediction (2020, AAAI)</span>
 
+&emsp;Generate more heterogeneous links **via network fair embedding**.
 
+&emsp;Existing algorithms promote the generation of links, which may cause **a filter bubble effect**, i.e., the users become more and more isolated in social networks and are limited to similar communities.From the perspective of fairness, it is unfair to favor certain types of links. This paper thus considers **fairness from the perspective of promoting links**.
 
+&emsp;the impact of attributes on links empirically. Then, **a fairness criterion** for this problem, termed **modred**, is proposed. Finally, a fairness-aware link prediction framework is proposed, which combines **adversarial** and **supervised learning**. The specific steps are following:
 
+&emsp;1) Employ a generator to **generate node representations** [[8]](#jump_ref8) (*Deepwalk: Online learning of social representations, 2014, KDD*).
+
+&emsp;2) Employ a discriminator to **distinguish the intra-group and inter-group pairs**. Note that a intra-group pair indicates that the two nodes forming the link are from similar communities.
+
+&emsp;3) Link prediction network. The prediction network is obtained by **splicing two node embedding vectors** into **a fully linked neural network** for supervised training.
 
 
 
@@ -141,4 +149,4 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 [[7] Masrour, Farzan and Wilson, Tyler and Yan, Heng and Tan, Pang-Ning and Esfahanian, Abdol. "Bursting the filter bubble: Fairness-aware network link prediction". *Proceedings of the AAAI Conference on Artificial Intelligence*, 2020.](https://ojs.aaai.org/index.php/AAAI/article/view/5429)
 
-[[8] Perozzi, Bryan and Al-Rfou, Rami and Skiena, Steven. "Deepwalk: Online learning of social representations". *Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining*, 2014.](https://dl.acm.org/doi/abs/10.1145/2623330.2623732?casa_token=k6_u02birAAAAAAA:WqyqWziZOFmOVmvlX7_xcSRuIG3fT98M6FRzMsSuSZn1XkxVwVFA9-ixem4s9VFy3Xhj3CTI2iaEWQ)
+<span id="jump_ref8">[[8] Perozzi, Bryan and Al-Rfou, Rami and Skiena, Steven. "Deepwalk: Online learning of social representations". *Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining*, 2014.](https://dl.acm.org/doi/abs/10.1145/2623330.2623732?casa_token=k6_u02birAAAAAAA:WqyqWziZOFmOVmvlX7_xcSRuIG3fT98M6FRzMsSuSZn1XkxVwVFA9-ixem4s9VFy3Xhj3CTI2iaEWQ)</span>
