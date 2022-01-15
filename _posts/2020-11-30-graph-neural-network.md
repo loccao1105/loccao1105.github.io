@@ -84,12 +84,20 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 ## <span id="jump_4"> Link prediction based on graph neural networks (2018, NIPS)</span>
 
+&emsp;Link prediction via **first or high-order structural information**.
+
+
+
+
 
 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_5"> Understanding negative sampling in graph representation learning (2020, KDD)</span>
+
+
+
 
 
 
@@ -117,6 +125,10 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 [[4] Zhang, Muhan and Chen, Yixin. "Link prediction based on graph neural networks". *Advances in Neural Information Processing Systems*, 2018.](https://proceedings.neurips.cc/paper/2018/file/53f0d7c537d99b3824f0f99d62ea2428-Paper.pdf)
 
-[[5] Yang, Zhen and Ding, Ming and Zhou, Chang and Yang, Hongxia and Zhou, Jingren and Tang, Jie. "Understanding negative sampling in graph representation learning". *Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining*, 2020.](https://dl.acm.org/doi/abs/10.1145/3394486.3403218?casa_token=iaq_bZ8FDMQAAAAA:78WO0m9SeU1dVAHjS8w0gQZfRfBl3eaQbxvLK9bQo4RczuMgTs65UNiF7sPk6s8AnHjPjsP3XTgmqA)
+[[5] Zhang, Muhan and Cui, Zhicheng and Neumann, Marion and Chen, Yixin. "An end-to-end deep learning architecture for graph classification". *Thirty-Second AAAI Conference on Artificial Intelligence*, 2018.](https://www.findshine.com/me/downloads/papers/AAAI2018-DGCNN.pdf)
 
-[[6] Masrour, Farzan and Wilson, Tyler and Yan, Heng and Tan, Pang-Ning and Esfahanian, Abdol. "Bursting the filter bubble: Fairness-aware network link prediction". *Proceedings of the AAAI Conference on Artificial Intelligence*, 2020.](https://ojs.aaai.org/index.php/AAAI/article/view/5429)
+[[6] Yang, Zhen and Ding, Ming and Zhou, Chang and Yang, Hongxia and Zhou, Jingren and Tang, Jie. "Understanding negative sampling in graph representation learning". *Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining*, 2020.](https://dl.acm.org/doi/abs/10.1145/3394486.3403218?casa_token=iaq_bZ8FDMQAAAAA:78WO0m9SeU1dVAHjS8w0gQZfRfBl3eaQbxvLK9bQo4RczuMgTs65UNiF7sPk6s8AnHjPjsP3XTgmqA)
+
+[[7] Masrour, Farzan and Wilson, Tyler and Yan, Heng and Tan, Pang-Ning and Esfahanian, Abdol. "Bursting the filter bubble: Fairness-aware network link prediction". *Proceedings of the AAAI Conference on Artificial Intelligence*, 2020.](https://ojs.aaai.org/index.php/AAAI/article/view/5429)
+
+[[8] Perozzi, Bryan and Al-Rfou, Rami and Skiena, Steven. "Deepwalk: Online learning of social representations". *Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining*, 2014.](https://ojs.aaai.org/index.php/AAAI/article/view/5429)
