@@ -98,9 +98,17 @@ My 2020 paper reading list in graph neural network (GNN), with special emphasis 
 
 ## <span id="jump_5"> Understanding negative sampling in graph representation learning (2020, KDD)</span>
 
+&emsp;Link prediction via a **new negative sampling strategy**.
 
+&emsp;The importance of negative sampling is discussed from **target** and **risk**. The authors prove that the **positive and negative distributions have the same influence** to the optimization procedure, and the squared deviation loss may be determined by the minimum value of the probability of the two distributions. Then, this paper concludes that the **negative sampling distribution should be sublinearly related to the positive**, and thus proposes a new negative sampling strategy:
 
+&emsp;1) Employ the **self-contrastive approximation** to replace the negative sampling distribution with the **inner product of the encoder**.
 
+&emsp;2) Employ the **Metropolis-Hastings (MH)** algorithm to obtain a sequence of random samples from a non-standardized distribution.
+
+&emsp;3) Aimed at the long iteration time in the MH algorithm, the characteristics, i.e., the **adjacent nodes sharing similar positive distribution**, may be used to improve the negative sampling process of the Markov chain. 
+
+&emsp;4) The proposed negative sampling strategy can be used to replace the other negative sampling strategies to improve the performance.
 
 
 
