@@ -24,7 +24,7 @@ Education
 Academic records
 ------
 * Master in [Xiamen University (厦门大学)](https://www.xmu.edu.cn/), Xiamen, CHN
-  * GPA: 3.80/4.0
+  * GPA: 3.80/4.0 [[details (EN)]](https://hauliang.github.io/files/XMU-GPA-EN.pdf) [[details (CN)]](https://hauliang.github.io/files/XMU-GPA-CN.pdf) 
   * Rank: 1/104
 * Bachelor in [Shenzhen University (深圳大学)](https://www.szu.edu.cn/), Shenzhen, CHN
   * GPA: 3.86/4.5 [[details (EN)]](https://hauliang.github.io/files/SZU-GPA-EN.pdf) [[details (CN)]](https://hauliang.github.io/files/SZU-GPA-CN.pdf) 
