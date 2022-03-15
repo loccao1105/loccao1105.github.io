@@ -15,6 +15,15 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
 ## Journal Publications
 
 <ol>
+
+<li><p> <b>A robust low-rank matrix completion based on truncated nuclear norm and Lp-norm</b><br>
+<b>Liang, Hao</b> and Li, Kang* and Tu, Xiaotong* and Huang, Jianjun<br>
+<i>The Journal of Supercomputing</i>, 2022 <br>
+<a href="https://doi.org/10.1007/s11227-022-04385-8" class="textlink" target="_blank">[pdf]</a>
+<a href="https://github.com/HauLiang/Lp-TNN" class="textlink" target="_blank">[codes]</a>
+</p>
+</li>
+
 <li><p> <b>High-Resolution Source Localization Exploiting the Sparsity of the Beamforming Map</b><br>
 Ding, Xinghao and <b>Liang, Hao</b> and Jakobsson, Andreas and Tu, Xiaotong* and Huang, Yue<br>
 <i>Signal Processing</i>, 2022 <br>
@@ -27,5 +36,14 @@ Ding, Xinghao and <b>Liang, Hao</b> and Jakobsson, Andreas and Tu, Xiaotong* and
 
 ## Conference Publications
 
+<ol>
 
+<li><p> <b>A robust low-rank matrix completion based on truncated nuclear norm and Lp-norm</b><br>
+<b>Liang, Hao</b> and Ding, Xinghao and Jakobsson, Andreas and Tu, Xiaotong* and Huang, Yue<br>
+in <i>2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</i>, 2022 <br>
+<a href="" class="textlink" target="_blank">[pdf]</a>
+<a href="https://github.com/HauLiang/AVNCMD" class="textlink" target="_blank">[codes]</a>
+</p>
+</li>
 
+</ol>
