@@ -12,8 +12,11 @@ You can also find my codes on my [Github repositories](https://github.com/HauLia
 
 Codes for Papers
 ------
-* [FFT-DFISTA & FFT-DADMM](https://github.com/HauLiang/FFT-DFISTA-and-FFT-DADMM) for the ["High-Resolution Source Localization Exploiting the Sparsity of the Beamforming Map"](https://www.sciencedirect.com/science/article/pii/S016516842100414X)
+* [Lp-TNN](https://github.com/HauLiang/Lp-TNN) for the ["A Robust Low-Rank Matrix Completion Based on Truncated Nuclear Norm and Lp-norm"](https://doi.org/10.1007/s11227-022-04385-8)
 
+* [AVNCMD](https://github.com/HauLiang/AVNCMD) for the ["Adaptive Variational Nonlinear Chirp Mode Decomposition"]()
+
+* [FFT-DFISTA & FFT-DADMM](https://github.com/HauLiang/FFT-DFISTA-and-FFT-DADMM) for the ["High-Resolution Source Localization Exploiting the Sparsity of the Beamforming Map"](https://www.sciencedirect.com/science/article/pii/S016516842100414X)
 
 
 
