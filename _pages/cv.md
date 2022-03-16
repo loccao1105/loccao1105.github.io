@@ -33,6 +33,7 @@ Academic records
 
 Awards & Honors
 ------
+* **Outstanding Volunteers**, Xiamen University, 2022
 * **Outstanding Graduate Students**, Xiamen University, 2021
 * **Outstanding Graduates**, Shenzhen University, 2020
 
