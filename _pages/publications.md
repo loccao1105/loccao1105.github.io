@@ -41,7 +41,7 @@ Ding, Xinghao and <b>Liang, Hao</b> and Jakobsson, Andreas and Tu, Xiaotong* and
 <li><p> <b>Adaptive Variational Nonlinear Chirp Mode Decomposition</b><br>
 <b>Liang, Hao</b> and Ding, Xinghao and Jakobsson, Andreas and Tu, Xiaotong* and Huang, Yue<br>
 in <i>2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</i>, 2022 <br>
-<a href="" class="textlink" target="_blank">[pdf]</a>
+<a href="https://ieeexplore.ieee.org/abstract/document/9746147" class="textlink" target="_blank">[pdf]</a>
 <a href="https://github.com/HauLiang/AVNCMD" class="textlink" target="_blank">[codes]</a>
 </p>
 </li>
