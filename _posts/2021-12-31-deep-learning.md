@@ -88,6 +88,7 @@ $$
 &emsp;&emsp;本文用ADMM启发的深度网络来解决MRI压缩感知的问题。作者发现了传统方法和深度学习方法中的问题：
 
 1. 传统方法：最佳变换域以及稀疏约束的选择难以确定，并且难以确定最优参数（如稀疏参数、步长参数等），同时算法需要上百轮迭代才可以收敛；
+
 2. 深度学习方法：CNN计算高效，但感受野有限；DNN感受野深，但计算慢。同时深度学习的黑盒属性让网络难以自动学习变换的稀疏性。
 
 &emsp;&emsp;压缩感知MRI模型可以描述如下：
@@ -120,7 +121,17 @@ $$
 <img src="https://hauliang.github.io/read-list-file/ADMM-Net.jpg" width="700px" height="300px"> 
 </div>
 
+&emsp;&emsp;ADMM-Net网络中定义了四种操作，分别为：
 
+1. Reconstruction operation $\boldsymbol{X}^{n}$
+
+&emsp;&emsp;对应于ADMM中的：$\boldsymbol{x}^{(n)}=\boldsymbol{F}^{T}\left[\boldsymbol{P}^{T} \boldsymbol{P}+\sum_{l=1}^{L} \rho_{l} \boldsymbol{F} \boldsymbol{D}_{l}^{T} \boldsymbol{D}_{l} \boldsymbol{F}^{T}\right]^{-1}\left[\boldsymbol{P}^{T} \boldsymbol{y}+\sum_{l=1}^{L} \rho_{l} \boldsymbol{F} \boldsymbol{D}_{l}^{T}\left(\mathbf{z}_{l}^{(n-1)}-\boldsymbol{\beta}_{l}^{(n-1)}\right)\right]$.
+
+2. Convolution operation $\boldsymbol{C}^{n}$ defined by $\left\{\boldsymbol{D}_{l} \boldsymbol{x}^{(n)}\right\}_{l=1}^{L}$
+
+3. Nonlinear transform operation $\boldsymbol{Z}^{n}$ defined by $S(\cdot)$
+
+4. Multiplier update operation 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
