@@ -14,6 +14,11 @@ My 2021 paper reading list in **model-driven deep learning**.
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
+参考PPT（2021.08.17组会）：[Model-driven deep learning —— differentiable programming](https://hauliang.github.io/read-list-file/Model-driven-deep-learning-differentiable-programming.pdf)。
+ 
+
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
+
 # Paper List
 
 * [Learning fast approximations of sparse coding (2010, ICML)](#jump_1)
@@ -49,7 +54,7 @@ $$
 <div style="text-align: center">
 <img src="https://hauliang.github.io/read-list-file/ISTA-block-diagram.jpg" width="400px" height="300px"> 
 </div>
-&emsp;&emsp;但这个网络是不断循环直至收敛的，这样的网络无法进行训练。那我们如何将ISTA算法转化为一个可训练的神经网络呢？作者提出，我们只需要将上图进行固定轮数的截断，就可以得到一个ISTA版本的神经网络，它等价于执行ISTA算法中的L轮迭代（其中L为网络的深度）。具体来说，这个网络可以表示为如下形式：
+&emsp;&emsp;但这个网络是不断循环直至收敛的，这样的网络无法进行训练。那我们如何将ISTA算法转化为一个可训练的神经网络呢？作者提出，我们只需要将上图进行固定轮数的截断，就可以得到一个ISTA版本的神经网络，它等价于执行ISTA算法中的L轮迭代（其中L为网络的深度）。具体来说，本文提出的LISTA网络可以表示为如下形式：
 <div style="text-align: center">
 <img src="https://hauliang.github.io/read-list-file/LISTA.jpg" width="600px" height="400px"> 
 </div>
