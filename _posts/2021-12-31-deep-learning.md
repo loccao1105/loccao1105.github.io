@@ -36,9 +36,11 @@ My 2021 paper reading list in **model-driven deep learning**.
 ## <span id="jump_1"> Learning fast approximations of sparse coding (2010, ICML) </span>
 
 &emsp;&emsp;本文用神经网络来学习稀疏编码问题。稀疏编码问题可以建模为一范数约束下的最小二乘问题，如下：
+
 $$
 \boldsymbol{Z}^{*}=\underset{\boldsymbol{Z}}{\operatorname{argmin}} \frac{1}{2}\left\|\boldsymbol{X}-\boldsymbol{W}_{d} \boldsymbol{Z}\right\|_{2}^{2}+\alpha\|\boldsymbol{Z}\|_{1},
 $$
+
 其中$\boldsymbol{W}_{d}$表示字典矩阵。对于此优化问题，已有很多算法用于求解它，比如ISTA算法（见参考文献[[7]](#jump_ref7)）。但ISTA算法为迭代算法，需要很多轮迭代才能收敛，计算成本是昂贵的，具体算法步骤如下：
 <div style="text-align: center">
 <img src="https://hauliang.github.io/read-list-file/ISTA.jpg" width="400px" height="300px"> 
@@ -49,10 +51,11 @@ $$
 </div>
 &emsp;&emsp;但这个网络是不断循环直至收敛的，这样的网络无法进行训练。那我们如何将ISTA算法转化为一个可训练的神经网络呢？作者提出，我们只需要将上图进行固定轮数的截断，就可以得到一个ISTA版本的神经网络，它等价于执行ISTA算法中的L轮迭代（其中L为网络的深度）。具体来说，这个网络可以表示为如下形式：
 <div style="text-align: center">
-<img src="https://hauliang.github.io/read-list-file/LISTA.jpg" width="400px" height="300px"> 
+<img src="https://hauliang.github.io/read-list-file/LISTA.jpg" width="600px" height="400px"> 
 </div>
 
 其中$\boldsymbol{W}_{e}$, $\boldsymbol{S}$和$\theta$都是可学习的参数。至于损失函数，只需要最小化网络输出的稀疏编码与ground truth的稀疏编码即可，具体如下：
+
 $$
 \begin{aligned}
 &L(\boldsymbol{W})=\frac{1}{P} \sum_{p=1}^{P} L\left(\boldsymbol{W}, \boldsymbol{X}^{p}\right) \text { with } \\
@@ -62,7 +65,7 @@ $$
 
 &emsp;&emsp;网络可以很好取得较小估计误差和较快的运行时间。部分数值实验结果截取如下：
 <div style="text-align: center">
-<img src="https://hauliang.github.io/read-list-file/LISTA-result.jpg" width="400px" height="300px"> 
+<img src="https://hauliang.github.io/read-list-file/LISTA-result.jpg" width="600px" height="400px"> 
 </div>
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
