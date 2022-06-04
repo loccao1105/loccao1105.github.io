@@ -35,7 +35,7 @@ My 2021 paper reading list in **model-driven deep learning**.
 
 ## <span id="jump_1"> Learning fast approximations of sparse coding (2010, ICML) </span>
 
-&emsp;Graph embedding via **representation learning** (node -> vector).
+&emsp; 本文用
 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
