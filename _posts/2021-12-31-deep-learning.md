@@ -123,7 +123,7 @@ $$
 
 &emsp;&emsp;ADMM-Net网络中定义了四种操作，分别为：
 
-1. Reconstruction operation $\boldsymbol{X}^{n}$
+**1. Reconstruction operation $\boldsymbol{X}^{n}$**
 
 &emsp;&emsp;对应于ADMM中的：
 $\boldsymbol{x}^{(n)}=\boldsymbol{F}^{T}\left[\boldsymbol{P}^{T} \boldsymbol{P}+\sum_{l=1}^{L} \rho_{l} \boldsymbol{F} \boldsymbol{D}_{l}^{T} \boldsymbol{D}_{l} \boldsymbol{F}^{T}\right]^{-1}\left[\boldsymbol{P}^{T} \boldsymbol{y}+\sum_{l=1}^{L} \rho_{l} \boldsymbol{F} \boldsymbol{D}_{l}^{T}\left(\mathbf{z}_{l}^{(n-1)}-\boldsymbol{\beta}_{l}^{(n-1)}\right)\right]$.
@@ -139,11 +139,31 @@ $$
 \boldsymbol{x}^{(1)}=\boldsymbol{F}^{T}\left(\boldsymbol{P}^{T} \boldsymbol{P}+\sum_{l=1}^{L} \rho_{l}^{(1)} \boldsymbol{F} \boldsymbol{H}_{l}^{(1) T} \boldsymbol{H}_{l}^{(1)} \boldsymbol{F}^{T}\right)^{-1}\left(\boldsymbol{P}^{T} \boldsymbol{y}\right).
 $$
 
-2. Convolution operation $\boldsymbol{C}^{n}$ defined by $\left\{\boldsymbol{D}_{l} \boldsymbol{x}^{(n)}\right\}_{l=1}^{L}$
+**2. Convolution operation $\boldsymbol{C}^{n}$ defined by $\left\{\boldsymbol{D}_{l} \boldsymbol{x}^{(n)}\right\}_{l=1}^{L}$**
 
-3. Nonlinear transform operation $\boldsymbol{Z}^{n}$ defined by $S(\cdot)$
+&emsp;&emsp;对应于ADMM中的：
+$\mathbf{z}_{l}^{(n)}=S\left(\boldsymbol{D}_{l} x^{(n)}+\boldsymbol{\beta}_{l}^{(n-1)} ; \lambda_{l} / \rho_{l}\right)$.
 
-4. Multiplier update operation 
+&emsp;&emsp;Deep ADMM-Net -- Convolution layer:
+$$
+\boldsymbol{c}_{l}^{(n)}=\boldsymbol{D}_{l}^{(n)} \boldsymbol{x}^{(n)},
+$$
+&emsp;&emsp;其中$\boldsymbol{D}_{l}^{(n)}$表示可学习的滤波矩阵。该操作是为了将图片变换到某个合适的变换域。
+
+&emsp;&emsp;注：与ADMM算法不同，$\boldsymbol{H}_{l}$和$\boldsymbol{D}_{l}$没有设置为两个不同的可学习矩阵，这是为了增加网络的学习能力。
+
+**3. Nonlinear transform operation $\boldsymbol{Z}^{n}$ defined by $S(\cdot)$**
+
+&emsp;&emsp;对应于ADMM中的：
+$\mathbf{z}_{l}^{(n)}=S\left(\boldsymbol{D}_{l} x^{(n)}+\boldsymbol{\beta}_{l}^{(n-1)} ; \lambda_{l} / \rho_{l}\right)$.
+
+为了学习更灵活的变换，本文提出使用分段线性函数进行拟合，定义如下：
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/piecewise-linear-function.jpg" width="700px" height="400px"> 
+</div>
+
+
+**4. Multiplier update operation $\boldsymbol{M}^{n}$**
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
