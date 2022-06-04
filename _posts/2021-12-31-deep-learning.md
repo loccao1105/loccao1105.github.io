@@ -139,8 +139,8 @@ $$
 \boldsymbol{x}^{(1)}=\boldsymbol{F}^{T}\left(\boldsymbol{P}^{T} \boldsymbol{P}+\sum_{l=1}^{L} \rho_{l}^{(1)} \boldsymbol{F} \boldsymbol{H}_{l}^{(1) T} \boldsymbol{H}_{l}^{(1)} \boldsymbol{F}^{T}\right)^{-1}\left(\boldsymbol{P}^{T} \boldsymbol{y}\right).
 $$
 
-**2. Convolution operation $\boldsymbol{C}^{n}$ defined by $\left\{\boldsymbol{D}_{l} \boldsymbol{x}^{(n)}\right\}_{l=1}^{L}$ **
-s
+**2. Convolution operation $\boldsymbol{C}^{n}$ defined by $\left\{\boldsymbol{D}_{l} \boldsymbol{x}^{(n)}\right\}_{l=1}^{L}$**
+
 &emsp;&emsp;对应于ADMM中的：
 
 $$\mathbf{z}_{l}^{(n)}=S\left(\boldsymbol{D}_{l} x^{(n)}+\boldsymbol{\beta}_{l}^{(n-1)} ; \lambda_{l} / \rho_{l}\right).$$
