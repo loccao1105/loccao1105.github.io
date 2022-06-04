@@ -157,13 +157,35 @@ $$
 &emsp;&emsp;对应于ADMM中的：
 $\mathbf{z}_{l}^{(n)}=S\left(\boldsymbol{D}_{l} x^{(n)}+\boldsymbol{\beta}_{l}^{(n-1)} ; \lambda_{l} / \rho_{l}\right)$.
 
-为了学习更灵活的变换，本文提出使用分段线性函数进行拟合，定义如下：
+&emsp;&emsp;为了学习更灵活的变换，本文提出使用分段线性函数进行拟合，定义如下：
 <div style="text-align: center">
 <img src="https://hauliang.github.io/read-list-file/piecewise-linear-function.jpg" width="700px" height="400px"> 
 </div>
+&emsp;&emsp;Deep ADMM-Net — Nonlinear transform layer ：
 
+$$
+\mathbf{z}_{l}^{(n)}=S_{P L F}\left(\boldsymbol{c}_{l}^{(n)}+\boldsymbol{\beta}_{l}^{(n-1)} ;\left\{p_{i}, q_{l, i}^{(n)}\right\}_{i=1}^{N_{c}}\right).
+$$
 
 **4. Multiplier update operation $\boldsymbol{M}^{n}$**
+
+&emsp;&emsp;对应于ADMM中的：
+$\boldsymbol{\beta}_{l}^{(n)}=\boldsymbol{\beta}_{l}^{(n-1)}+\eta_{l}\left(\boldsymbol{D}_{l} \boldsymbol{x}^{(n)}-\mathbf{z}_{l}^{(n)}\right)$.
+
+&emsp;&emsp;Deep ADMM-Net — Multiplier update layer：
+
+$$
+\boldsymbol{\beta}_{l}^{(n)}=\boldsymbol{\beta}_{l}^{(n-1)}+\eta_{l}^{(n)}\left(\boldsymbol{c}_{l}^{(n)}-\mathbf{z}_{l}^{(n)}\right),
+$$
+&emsp;&emsp;其中$\eta_{l}^{(n)}$表示可学习的参数。
+
+&emsp;&emsp;网络的损失函数和可学习参数如下所示：
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/ADMM-Net-overall.jpg" width="700px" height="400px"> 
+</div>
+
+
+
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
