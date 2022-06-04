@@ -115,6 +115,13 @@ $$
 \end{array}\right.
 $$
 
+&emsp;&emsp;注意到ADMM算法是不断迭代上述式子，得到最后的收敛解。那么，我们可以设计L层的深度网络，将算法的迭代步骤用于指导网络的设计。具体来说，ADMM-Net的stage n编队应于ADMM算法的第n轮迭代，网络架构如下：
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/ADMM-Net.jpg" width="700px" height="300px"> 
+</div>
+
+
+
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 
