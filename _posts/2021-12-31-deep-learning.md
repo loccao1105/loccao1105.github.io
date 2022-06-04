@@ -126,7 +126,7 @@ $$
 **1. Reconstruction operation $\boldsymbol{X}^{n}$**
 
 &emsp;&emsp;对应于ADMM中的：
-$\boldsymbol{x}^{(n)}=\boldsymbol{F}^{T}\left[\boldsymbol{P}^{T} \boldsymbol{P}+\sum_{l=1}^{L} \rho_{l} \boldsymbol{F} \boldsymbol{D}_{l}^{T} \boldsymbol{D}_{l} \boldsymbol{F}^{T}\right]^{-1}\left[\boldsymbol{P}^{T} \boldsymbol{y}+\sum_{l=1}^{L} \rho_{l} \boldsymbol{F} \boldsymbol{D}_{l}^{T}\left(\mathbf{z}_{l}^{(n-1)}-\boldsymbol{\beta}_{l}^{(n-1)}\right)\right]$.
+$$\boldsymbol{x}^{(n)}=\boldsymbol{F}^{T}\left[\boldsymbol{P}^{T} \boldsymbol{P}+\sum_{l=1}^{L} \rho_{l} \boldsymbol{F} \boldsymbol{D}_{l}^{T} \boldsymbol{D}_{l} \boldsymbol{F}^{T}\right]^{-1}\left[\boldsymbol{P}^{T} \boldsymbol{y}+\sum_{l=1}^{L} \rho_{l} \boldsymbol{F} \boldsymbol{D}_{l}^{T}\left(\mathbf{z}_{l}^{(n-1)}-\boldsymbol{\beta}_{l}^{(n-1)}\right)\right].$$
 
 &emsp;&emsp;Deep ADMM-Net -- Reconstruction layer:
 $$
@@ -142,7 +142,8 @@ $$
 **2. Convolution operation $\boldsymbol{C}^{n}$ defined by $\left\{\boldsymbol{D}_{l} \boldsymbol{x}^{(n)}\right\}_{l=1}^{L}$**
 
 &emsp;&emsp;对应于ADMM中的：
-$\mathbf{z}_{l}^{(n)}=S\left(\boldsymbol{D}_{l} x^{(n)}+\boldsymbol{\beta}_{l}^{(n-1)} ; \lambda_{l} / \rho_{l}\right)$.
+
+$$\mathbf{z}_{l}^{(n)}=S\left(\boldsymbol{D}_{l} x^{(n)}+\boldsymbol{\beta}_{l}^{(n-1)} ; \lambda_{l} / \rho_{l}\right).$$
 
 &emsp;&emsp;Deep ADMM-Net -- Convolution layer:
 $$
@@ -155,11 +156,12 @@ $$
 **3. Nonlinear transform operation $\boldsymbol{Z}^{n}$ defined by $S(\cdot)$**
 
 &emsp;&emsp;对应于ADMM中的：
-$\mathbf{z}_{l}^{(n)}=S\left(\boldsymbol{D}_{l} x^{(n)}+\boldsymbol{\beta}_{l}^{(n-1)} ; \lambda_{l} / \rho_{l}\right)$.
+
+$$\mathbf{z}_{l}^{(n)}=S\left(\boldsymbol{D}_{l} x^{(n)}+\boldsymbol{\beta}_{l}^{(n-1)} ; \lambda_{l} / \rho_{l}\right).$$
 
 &emsp;&emsp;为了学习更灵活的变换，本文提出使用分段线性函数进行拟合，定义如下：
 <div style="text-align: center">
-<img src="https://hauliang.github.io/read-list-file/piecewise-linear-function.jpg" width="700px" height="400px"> 
+<img src="https://hauliang.github.io/read-list-file/piecewise-linear-function.jpg" width="800px" height="500px"> 
 </div>
 &emsp;&emsp;Deep ADMM-Net — Nonlinear transform layer ：
 
@@ -170,7 +172,8 @@ $$
 **4. Multiplier update operation $\boldsymbol{M}^{n}$**
 
 &emsp;&emsp;对应于ADMM中的：
-$\boldsymbol{\beta}_{l}^{(n)}=\boldsymbol{\beta}_{l}^{(n-1)}+\eta_{l}\left(\boldsymbol{D}_{l} \boldsymbol{x}^{(n)}-\mathbf{z}_{l}^{(n)}\right)$.
+
+$$\boldsymbol{\beta}_{l}^{(n)}=\boldsymbol{\beta}_{l}^{(n-1)}+\eta_{l}\left(\boldsymbol{D}_{l} \boldsymbol{x}^{(n)}-\mathbf{z}_{l}^{(n)}\right).$$s
 
 &emsp;&emsp;Deep ADMM-Net — Multiplier update layer：
 
@@ -181,7 +184,7 @@ $$
 
 &emsp;&emsp;网络的损失函数和可学习参数如下所示：
 <div style="text-align: center">
-<img src="https://hauliang.github.io/read-list-file/ADMM-Net-overall.jpg" width="700px" height="400px"> 
+<img src="https://hauliang.github.io/read-list-file/ADMM-Net-overall.jpg" width="800px" height="500px"> 
 </div>
 
 
