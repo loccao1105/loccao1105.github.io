@@ -116,7 +116,7 @@ $$
 \end{array}\right.
 $$
 
-&emsp;&emsp;注意到ADMM算法是不断迭代上述式子，得到最后的收敛解。那么，我们可以设计L层的深度网络，将算法的迭代步骤用于指导网络的设计。具体来说，ADMM-Net的stage n编队应于ADMM算法的第n轮迭代，网络架构如下：
+&emsp;&emsp;注意到ADMM算法是不断迭代上述式子，得到最后的收敛解。那么，我们可以设计L层的深度网络，将算法的迭代步骤用于指导网络的设计。具体来说，ADMM-Net的stage n便对应于ADMM算法的第n轮迭代，网络架构如下：
 <div style="text-align: center">
 <img src="https://hauliang.github.io/read-list-file/ADMM-Net.jpg" width="700px" height="300px"> 
 </div>
@@ -157,7 +157,7 @@ $$
 
 &emsp;&emsp;其中$\boldsymbol{D}_{l}^{(n)}$表示可学习的滤波矩阵。该操作是为了将图片变换到某个合适的变换域。
 
-&emsp;&emsp;注：与ADMM算法不同，$\boldsymbol{H}_{l}$ 和 $\boldsymbol{D}_{l}$ 没有被设置为两个不同的可学习矩阵，这是为了增加网络的学习能力。
+&emsp;&emsp;注：与ADMM算法不同，$\boldsymbol{D}_{l}$ 没有被设置为两个不同的可学习矩阵，这是为了增加网络的学习能力。
 
 **3. Nonlinear transform operation $\boldsymbol{Z}^{n}$**
 
