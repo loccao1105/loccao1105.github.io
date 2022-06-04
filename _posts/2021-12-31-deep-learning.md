@@ -151,7 +151,7 @@ $$
 $$
 &emsp;&emsp;其中$\boldsymbol{D}_{l}^{(n)}$表示可学习的滤波矩阵。该操作是为了将图片变换到某个合适的变换域。
 
-&emsp;&emsp;注：与ADMM算法不同，$\boldsymbol{H}_{l}$和$\boldsymbol{D}_{l}$没有设置为两个不同的可学习矩阵，这是为了增加网络的学习能力。
+&emsp;&emsp;注：与ADMM算法不同，$\boldsymbol{H}_{l}$ 和 $\boldsymbol{D}_{l}$ 没有设置为两个不同的可学习矩阵，这是为了增加网络的学习能力。
 
 **3. Nonlinear transform operation $\boldsymbol{Z}^{n}$ defined by $S(\cdot)$**
 
