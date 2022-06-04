@@ -14,6 +14,10 @@ My 2021 paper reading list in **model-driven deep learning**.
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
+模型启发的深度学习首先要需要基于问题背景，对任务进行数学建模。然后基于这个数学模型，设计一个合适的优化算法。一般来说，所选择或设计的优化算法是迭代算法。那么，我们可以将这个迭代算法展开为一个固定深度的神经网络，并通过数据驱动，让网络参数得以学习更新，即由模型启发而设计的深度网络。
+
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
+
 参考PPT（2021.08.17组会）：[Model-driven deep learning —— differentiable programming](https://hauliang.github.io/read-list-file/Model-driven-deep-learning-differentiable-programming.pdf)。
  
 
@@ -117,3 +121,7 @@ $$
 [[6] Simeoni, Matthieu and Kashani, Sepand and Hurley, Paul and Vetterli, Martin. "DeepWave: a recurrent neural-network for real-time acoustic imaging". *Advances in Neural Information Processing Systems*, 2019.](https://proceedings.neurips.cc/paper/2019/hash/e9bf14a419d77534105016f5ec122d62-Abstract.html)
 
 <span id="jump_ref7">[[7] Daubechies, Ingrid and Defrise, Michel and De Mol, Christine. "An iterative thresholding algorithm for linear inverse problems with a sparsity constraint".*Communications on Pure and Applied Mathematics: A Journal Issued by the Courant Institute of Mathematical Sciences*, 2019.](https://onlinelibrary.wiley.com/doi/abs/10.1002/cpa.20042?casa_token=NdetDJihuEYAAAAA:ggEgBIc_u5It6u3XUsgrsCh59mhI_R5UjwZslSYQQPYHzsyTaIpbn8YzWr-vGxbQSe7x5OAmCxDZgjT9JA)
+
+<span id="jump_ref8">[[8] Daubechies, Ingrid and Defrise, Michel and De Mol, Christine. "An iterative thresholding algorithm for linear inverse problems with a sparsity constraint".*Communications on Pure and Applied Mathematics: A Journal Issued by the Courant Institute of Mathematical Sciences*, 2019.](https://onlinelibrary.wiley.com/doi/abs/10.1002/cpa.20042?casa_token=NdetDJihuEYAAAAA:ggEgBIc_u5It6u3XUsgrsCh59mhI_R5UjwZslSYQQPYHzsyTaIpbn8YzWr-vGxbQSe7x5OAmCxDZgjT9JA)
+
+<span id="jump_ref9">[[9] Daubechies, Ingrid and Defrise, Michel and De Mol, Christine. "An iterative thresholding algorithm for linear inverse problems with a sparsity constraint".*Communications on Pure and Applied Mathematics: A Journal Issued by the Courant Institute of Mathematical Sciences*, 2019.](https://onlinelibrary.wiley.com/doi/abs/10.1002/cpa.20042?casa_token=NdetDJihuEYAAAAA:ggEgBIc_u5It6u3XUsgrsCh59mhI_R5UjwZslSYQQPYHzsyTaIpbn8YzWr-vGxbQSe7x5OAmCxDZgjT9JA)
