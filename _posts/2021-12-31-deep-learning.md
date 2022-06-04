@@ -173,7 +173,7 @@ $$
 
 &emsp;&emsp;对应于ADMM中的：
 
-$$\boldsymbol{\beta}_{l}^{(n)}=\boldsymbol{\beta}_{l}^{(n-1)}+\eta_{l}\left(\boldsymbol{D}_{l} \boldsymbol{x}^{(n)}-\mathbf{z}_{l}^{(n)}\right).$$s
+$$\boldsymbol{\beta}_{l}^{(n)}=\boldsymbol{\beta}_{l}^{(n-1)}+\eta_{l}\left(\boldsymbol{D}_{l} \boldsymbol{x}^{(n)}-\mathbf{z}_{l}^{(n)}\right).$$
 
 &emsp;&emsp;Deep ADMM-Net — Multiplier update layer：
 
