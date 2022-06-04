@@ -194,7 +194,10 @@ $$
 <img src="https://hauliang.github.io/read-list-file/ADMM-Net-overall.jpg" width="800px" height="500px"> 
 </div>
 
-
+部分数值结果展示如下：
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/ADMM-Net-result.jpg" width="700px" height="600px"> 
+</div>
 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
