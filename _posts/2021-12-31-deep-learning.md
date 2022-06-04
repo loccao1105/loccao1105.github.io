@@ -15,6 +15,9 @@ My 2021 paper reading list in **model-driven deep learning**.
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 模型启发的深度学习首先要需要基于问题背景，对任务进行数学建模。然后基于这个数学模型，设计一个合适的优化算法。一般来说，所选择或设计的优化算法是迭代算法。那么，我们可以将这个迭代算法展开为一个固定深度的神经网络，并通过数据驱动，让网络参数得以学习更新，即由模型启发而设计的深度网络。
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/model-driven-deep-learning.jpg" width="600px" height="100px"> 
+</div>
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
