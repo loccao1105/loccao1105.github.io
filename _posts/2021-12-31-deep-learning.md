@@ -404,6 +404,7 @@ $$
 **5. FISTA-Net的损失函数**
 
 FISTA-Net的损失函数由重构mse损失，可逆性损失和稀疏损失组成，表示为：
+
 $$
 \begin{aligned}
 &\mathcal{L}_{\text {total }}=\mathcal{L}_{\text {mse }}+\lambda_{1} \mathcal{L}_{\text {sym }}+\lambda_{2} \mathcal{L}_{\text {spa }}\\
