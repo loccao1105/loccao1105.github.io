@@ -427,6 +427,19 @@ $$
 
 ## <span id="jump_6"> DeepWave: a recurrent neural-network for real-time acoustic imaging (2019, NIPS) </span>
 
+&emsp;&emsp;DeepWave是专门为三维声成像设计的模型驱动的深度网络。具体来说，DeepWave是将声学成像中的近端梯度下降法展开为一个固定深度的循环网络，同时利用相关定理将参数简约化。DeepWave可以很好地达到时间和分辨率性能的平衡，在满足实时成像的同时，拥有不错的分辨率。网络结构和部分实验结果展示如下，具体实现过程在此不做详述（不会）。
+
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/DeepWave.jpg" width="700px" height="400px"> 
+</div>
+
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/DeepWave-ex1.jpg" width="600px" height="700px"> 
+</div>
+
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/DeepWave-ex2.jpg" width="600px" height="500px"> 
+</div>
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
