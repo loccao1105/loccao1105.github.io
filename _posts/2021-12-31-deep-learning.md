@@ -258,7 +258,7 @@ $$
 
 **1. ISTA-Net -- $\boldsymbol{r}^{(k)}$ Module**
 
-&emsp;&emsp;为了保持ISTA算法的结构优势，同时增加网络的灵活性，ISTA-Net允许步长参数是可学习的。该模块的更新公式表示如下：
+为了保持ISTA算法的结构优势，同时增加网络的灵活性，ISTA-Net允许步长参数是可学习的。该模块的更新公式表示如下：
 
 $$
 \boldsymbol{r}^{(k)}=\boldsymbol{x}^{(k-1)}-\rho^{(k)} \boldsymbol{\Phi}^{\top}\left(\boldsymbol{\Phi} \boldsymbol{x}^{(k-1)}-\boldsymbol{y}\right).
@@ -345,10 +345,13 @@ ISTA-Net与$\text{ISTA-Met}^{+}$的对比：
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
+
 ## <span id="jump_5"> FISTA-Net: Learning A fast iterative shrinkage thresholding network for inverse problems in imaging (2021, TMI) </span>
 
 
+
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
+
 
 ## <span id="jump_6"> DeepWave: a recurrent neural-network for real-time acoustic imaging (2019, NIPS) </span>
 
