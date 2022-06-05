@@ -251,9 +251,96 @@ $$
 \boldsymbol{x}^{(k)}=\underset{\boldsymbol{x}}{\arg \min } \frac{1}{2}\left\|\boldsymbol{x}-\boldsymbol{r}^{(k)}\right\|_{2}^{2}+\lambda\|\mathcal{F}(\boldsymbol{x})\|_{1}.
 $$
 
-ISTA-Net同样贯彻了模型启发的深度学习的思路，利用网络的phase来学习ISTA的迭代过程，具体架构如下：
+&emsp;&emsp;ISTA-Net同样贯彻了模型启发的深度学习的思路，利用网络的phase来学习ISTA的迭代过程，具体网络架构如下：
 <div style="text-align: center">
 <img src="https://hauliang.github.io/read-list-file/ISTA-Net.jpg" width="800px" height="600px"> 
+</div>
+
+**1. ISTA-Net -- $\boldsymbol{r}^{(k)}$ Module**
+
+&emsp;&emsp;为了保持ISTA算法的结构优势，同时增加网络的灵活性，ISTA-Net允许步长参数是可学习的。该模块的更新公式表示如下：
+
+$$
+\boldsymbol{r}^{(k)}=\boldsymbol{x}^{(k-1)}-\rho^{(k)} \boldsymbol{\Phi}^{\top}\left(\boldsymbol{\Phi} \boldsymbol{x}^{(k-1)}-\boldsymbol{y}\right).
+$$
+
+**2. ISTA-Net -- $\boldsymbol{x}^{(k)}$ Module**
+
+利用定理，可以将优化问题变换为如下形式：
+
+$$
+\boldsymbol{x}^{(k)}=\underset{\boldsymbol{x}}{\arg \min } \frac{1}{2}\left\|\mathcal{F}(\boldsymbol{x})-\mathcal{F}\left(\boldsymbol{r}^{(k)}\right)\right\|_{2}^{2}+\theta\|\mathcal{F}(\boldsymbol{x})\|_{1}.
+$$
+
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/ISTA-Net-xk.jpg" width="800px" height="600px"> 
+</div>
+
+上述优化问题有闭式解：
+
+$$
+\mathcal{F}\left(\boldsymbol{x}^{(k)}\right)=\operatorname{soft}\left(\mathcal{F}\left(\boldsymbol{r}^{(k)}\right), \theta\right),
+$$
+
+受小波变换可逆性的启发，$\mathcal{F}(\cdot)$应该满足$\widetilde{\mathcal{F}} \circ \mathcal{F}=I$，则有
+
+$$
+\boldsymbol{x}^{(k)}=\tilde{\mathcal{F}}\left(\operatorname{soft}\left(\mathcal{F}\left(\boldsymbol{r}^{(k)}\right), \theta\right)\right).
+$$
+
+**3. ISTA-Net的可学习参数**
+
+ISTA-Net中的可学习参数如下图：
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/ISTA-Net-para.jpg" width="800px" height="600px"> 
+</div>
+
+**4. ISTA-Net的损失函数设计**
+
+ISTA-Net的损失函数包括重建损失和可逆损失，具体表示如下：
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/ISTA-Net-loss.jpg" width="600px" height="400px"> 
+</div>
+
+**5. 增强版本$\text{ISTA-Net}^{+}$**
+
+由于自然图像和视频的残差应该是更可压缩的，则可以假设
+
+$$
+x^{(k)}=\boldsymbol{r}^{(k)}+\boldsymbol{w}^{(k)}+\boldsymbol{e}^{(k)},
+$$
+
+其中$\boldsymbol{e}^{(k)}$表示噪声，$\boldsymbol{w}^{(k)}$表示缺失的高频成分，可以通过线性操作来提取，即
+
+$$
+\boldsymbol{w}^{(k)}=\mathcal{R}\left(\boldsymbol{x}^{(k)}\right)=\mathcal{G} \circ \mathcal{D}\left(\boldsymbol{x}^{(k)}\right),
+$$
+
+同时建模$\mathcal{F}(\cdot)=\mathcal{H} \circ \mathcal{D}$，则可以通过如下流程求解$\boldsymbol{x}^{(k)}$:
+
+$$
+\begin{gathered}
+\min _{\boldsymbol{x}} \frac{1}{2}\left\|\mathcal{H}(\mathcal{D}(\boldsymbol{x}))-\mathcal{H}\left(\mathcal{D}\left(\boldsymbol{r}^{(k)}\right)\right)\right\|_{2}^{2}+\theta\|\mathcal{H}(\mathcal{D}(\boldsymbol{x}))\|_{1} \Rightarrow \boldsymbol{x}^{(k)} \Rightarrow \boldsymbol{x}^{(k)}=\boldsymbol{r}^{(k)}+\mathcal{R}\left(\boldsymbol{x}^{(k)}\right), \\
+\boldsymbol{x}^{(k)}=\boldsymbol{r}^{(k)}+\mathcal{G}\left(\tilde{\mathcal{H}}\left(\operatorname{soft}\left(\mathcal{H}\left(\mathcal{D}\left(\boldsymbol{r}^{(k)}\right)\right), \theta\right)\right)\right).
+\end{gathered}
+$$
+
+$\text{ISTA-Net}^{+}$网络的参数可以总结为：
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/ISTA-Net+.jpg" width="800px" height="600px"> 
+</div>
+
+
+**6. 数值实验**
+
+ISTA-Net与$\text{ISTA-Met}^{+}$的对比：
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/ISTA-Net-ex1.jpg" width="600px" height="400px"> 
+</div>
+
+公共数据集实验：
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/ISTA-Net-ex2.jpg" width="800px" height="600px"> 
 </div>
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
