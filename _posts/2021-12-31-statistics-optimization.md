@@ -32,6 +32,15 @@ My 2021 paper reading list in statistics & optimization, with special emphasis o
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
+## <span id="jump_1"> An augmented ADMM algorithm with application to the generalized lasso problem (2017, Journal of Computational and Graphical Statistics) </span>
+
+
+
+
+
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
+
+
 ## <span id="jump_reference"> References</span>
 
 [[1] Zhu, Yunzhang. "An augmented ADMM algorithm with application to the generalized lasso problem". *Journal of Computational and Graphical Statistics*, 2017.](https://www.tandfonline.com/doi/abs/10.1080/10618600.2015.1114491?casa_token=DE1-adlG2v8AAAAA:_KATDTd4o-sM59EiZ9BfurRXKUyoegiG-utOAAFTSAat-iKlyNWgnJR9YNTN7SKDXC8bIZ0ffFowQA)
