@@ -216,6 +216,45 @@ $$
 
 ## <span id="jump_4"> ISTA-Net: Interpretable optimization-inspired deep network for image compressive sensing (2018, CVPR) </span>
 
+&emsp;&emsp;本文的主要贡献为：
+
+1. 提出了一种新颖的网络，即ISTA-Net，它采用ISTA更新步骤的结构来设计可学习的深度网络表现形式；
+
+2. 通过利用压缩感知领域的残差域知识，衍生出增强版$\text{ISTA-Net}^{+}$，以进一步提高网络性能；
+
+3. 用更有效和通用的方式解决了非线性稀疏变换相关的近端映射问题。
+
+&emsp;&emsp;压缩感知问题可以被建模为：
+
+$$
+\min _{\boldsymbol{x}} \frac{1}{2}\|\boldsymbol{\Phi} \mathbf{x}-\mathbf{y}\|_{2}^{2}+\lambda\|\Psi \mathbf{x}\|_{1}.
+$$
+
+&emsp;&emsp;而ISTA算法[[7]](#jump_ref7)的解决步骤可以总结为：
+
+$$
+\begin{aligned}
+&\boldsymbol{r}^{(k)}=\boldsymbol{x}^{(k-1)}-\rho \boldsymbol{\Phi}^{\top}\left(\boldsymbol{\Phi} \boldsymbol{x}^{(k-1)}-\boldsymbol{y}\right), \\
+&\boldsymbol{x}^{(k)}=\underset{\boldsymbol{x}}{\arg \min } \frac{1}{2}\left\|\boldsymbol{x}-\boldsymbol{r}^{(k)}\right\|_{2}^{2}+\lambda\|\boldsymbol{\Psi} \mathbf{x}\|_{1},
+\end{aligned}
+$$
+
+其中第二个优化问题为近端优化问题，即
+
+$$
+\operatorname{prox}_{\lambda \phi}(\boldsymbol{r})=\underset{x}{\operatorname{argmin}} \frac{1}{2}\|x-\boldsymbol{r}\|_{2}^{2}+\lambda \phi(\boldsymbol{x}).
+$$
+
+&emsp;&emsp;受CNN强大的拟合能力的启发，作者提出用两层带ReLU的CNN层来进行学习变换函数：$\mathcal{F}(\boldsymbol{x})=\boldsymbol{\Psi}$，则优化问题可以表示为：
+
+$$
+\boldsymbol{x}^{(k)}=\underset{\boldsymbol{x}}{\arg \min } \frac{1}{2}\left\|\boldsymbol{x}-\boldsymbol{r}^{(k)}\right\|_{2}^{2}+\lambda\|\mathcal{F}(\boldsymbol{x})\|_{1}.
+$$
+
+ISTA-Net同样贯彻了模型启发的深度学习的思路，利用网络的phase来学习ISTA的迭代过程，具体架构如下：
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/ISTA-Net.jpg" width="800px" height="600px"> 
+</div>
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
