@@ -348,7 +348,78 @@ ISTA-Net与$\text{ISTA-Met}^{+}$的对比：
 
 ## <span id="jump_5"> FISTA-Net: Learning A fast iterative shrinkage thresholding network for inverse problems in imaging (2021, TMI) </span>
 
+&emsp;&emsp;本文是对ISTA-Net的改进版本，文章中注意到[ISTA-Net](#span-id"jump4"-ista-net-interpretable-optimization-inspired-deep-network-for-image-compressive-sensing-2018-cvpr-span)训练后可能带有非正的步长和阈值参数，这是与传统方法不相契合的。同时，FISTA算法（见参考文献[[9]](#jump_ref9)）是对ISTA算法的加速版本，引入了动量模块以加快收敛。具体来说，本文的主要贡献总结如下：
 
+1. 在FISTA-Net中，梯度矩阵是通过在整个迭代过程中替换固定的经典梯度来学习的；
+
+2. FISTA-Net 的核心参数，例如步长、阈值，被正则化以正确收敛；
+
+3. 在FISTA-Net中增加了一个动量模块来加速收敛。
+
+
+FISTA算法流程与FISTA-Net的对应模块操作总结如下：
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/FISTA-and-FISTA-Net.jpg" width="800px" height="600px"> 
+</div>
+
+**1. FISTA-Net -- Gradient descent module $\boldsymbol{r}^{(k)}$**
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/FISTA-Net-GD-module.jpg" width="800px" height="600px"> 
+</div>
+
+**2. FISTA-Net -- Proximal mapping module $\boldsymbol{x}^{(k)}$**
+
+$$
+\boldsymbol{x}^{(k)}=\mathcal{J}_{\theta^{(k)}}\left(\boldsymbol{r}^{(k)}\right).
+$$
+
+具体实现方式与ISTA-Net类似，利用卷积层+ReLU激活函数拟合，同样带有可逆性约束。
+
+**3. FISTA-Net -- Momentum module $\boldsymbol{y}^{(k+1)}$**
+
+通过引入动量模块加速收敛，表示为：
+$$
+\boldsymbol{y}^{(k+1)}=\mathbf{x}^{(k)}+\rho^{(k)}\left(\boldsymbol{x}^{(k)}-\boldsymbol{x}^{(k-1)}\right).
+$$
+
+**4. FISTA-Net -- Parameter constraints**
+
+ISTA-Net 在迭代过程中可能会生成非正的步长和阈值，这与这些变量的定义相矛盾。所以在本文提出的FISTA-Net中引入了正则化约束，保证步长参数是非负的，即
+
+$$
+\begin{aligned}
+\mu^{(k)} &=s p\left(w_{1} k+c_{1}\right), w_{1}<0, \\
+\theta^{(k)} &=\operatorname{sp}\left(w_{2} k+c_{2}\right), w_{2}<0, \\
+\rho^{(k)} &=\frac{\operatorname{sp}\left(w_{3} k+c_{3}\right)-s p\left(w_{3}+c_{3}\right)}{s p\left(w_{3} k+c_{3}\right)}, w_{3}>0,
+\end{aligned}
+$$
+
+其中$\operatorname{sp}(\cdot)$为softplus函数，即$\operatorname{sp}(x)=\ln (1+\exp (x))$，且$\rho^{(k)} \in(0,1)$。
+
+**5. FISTA-Net的框架**
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/FISTA-Net.jpg" width="800px" height="600px"> 
+</div>
+
+**5. FISTA-Net的损失函数**
+
+FISTA-Net的损失函数由重构mse损失，可逆性损失和稀疏损失组成，表示为：
+$$
+\begin{aligned}
+&\mathcal{L}_{\text {total }}=\mathcal{L}_{\text {mse }}+\lambda_{1} \mathcal{L}_{\text {sym }}+\lambda_{2} \mathcal{L}_{\text {spa }}\\
+&\text { with }\left\{\begin{array}{l}
+\mathcal{L}_{\mathrm{mse}}=\left\|\boldsymbol{x}_{N_{s}}-\boldsymbol{x}_{g t}\right\|_{2}^{2} \\
+\mathcal{L}_{\mathrm{tsf}}=\lambda_{1} \mathcal{L}_{\mathrm{sym}}+\lambda_{2} \mathcal{L}_{\mathrm{spa}}
+\end{array}\right.\\
+&=\lambda_{1} \sum_{k=1}^{N_{S}}\left\|\tilde{\mathcal{F}}\left(\mathcal{F}\left(\boldsymbol{r}^{(k)}\right)\right)-\boldsymbol{r}^{(k)}\right\|_{2}^{2}+\lambda_{2} \sum_{k=1}^{N_{S}}\left\|\mathcal{F}\left(\boldsymbol{r}^{(k)}\right)\right\|_{1}.
+\end{aligned}
+$$
+
+
+**6. FISTA-Net的实验展示**
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/FISTA-Net-ex.jpg" width="700px" height="600px"> 
+</div>
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
@@ -376,4 +447,4 @@ ISTA-Net与$\text{ISTA-Met}^{+}$的对比：
 
 <span id="jump_ref8">[[8] Boyd, Stephen and Parikh, Neal and Chu, Eric and Peleato, Borja and Eckstein, Jonathan and others. "Distributed optimization and statistical learning via the alternating direction method of multipliers".*Foundations and Trends{\textregistered} in Machine learning*, 2011.](http://www.nowpublishers.com/article/Details/MAL-016)
 
-<span id="jump_ref9">[[9] Daubechies, Ingrid and Defrise, Michel and De Mol, Christine. "An iterative thresholding algorithm for linear inverse problems with a sparsity constraint".*Communications on Pure and Applied Mathematics: A Journal Issued by the Courant Institute of Mathematical Sciences*, 2019.](https://onlinelibrary.wiley.com/doi/abs/10.1002/cpa.20042?casa_token=NdetDJihuEYAAAAA:ggEgBIc_u5It6u3XUsgrsCh59mhI_R5UjwZslSYQQPYHzsyTaIpbn8YzWr-vGxbQSe7x5OAmCxDZgjT9JA)
+<span id="jump_ref9">[[9] Beck, Amir and Teboulle, Marc. "A fast iterative shrinkage-thresholding algorithm for linear inverse problems".*SIAM journal on imaging sciences*, 2009.](https://epubs.siam.org/doi/abs/10.1137/080716542?casa_token=o0IuIrxG_cAAAAAA:pIFZTjpUbUt8Twy0iTZWksZKAEc6X2Uo1OJPplCd4Y3nx_Cpgmop4f-NWTJnOhAMwX7qXmuzB8iK)
