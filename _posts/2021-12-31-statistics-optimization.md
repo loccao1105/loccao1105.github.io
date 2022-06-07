@@ -34,7 +34,68 @@ My 2021 paper reading list in statistics & optimization, with special emphasis o
 
 ## <span id="jump_1"> An augmented ADMM algorithm with application to the generalized lasso problem (2017, Journal of Computational and Graphical Statistics) </span>
 
+&emsp;&emsp;本文是对经典ADMM方法的改进方法。具体来说，本文提出了新的变罚形式来加速ADMM算法，可以在保持相同收敛速度的同时降低计算量。提出的aug-ADMM可以解决广义LASSO问题，即
 
+$$
+\underset{\beta \in \mathbb{R}^{p}}{\operatorname{minimize}}(1 / 2) \cdot\|y-X \beta\|_{2}^{2}+\lambda\|A \beta\|_{1}.
+$$
+
+### **Preliminary:**
+
+考虑如下形式的优化问题：
+
+$$
+\operatorname{minimize}_{\theta \in \mathbb{R}^{p}} f(\theta)+g(A \theta),
+$$
+
+其中$f(\cdot)$和$g(\cdot)$都是“简单”的凸函数，且$A\in \mathbb{R}^{m\times p}$。标准的ADMM算法首先通过引入等价约束$A \theta=\gamma$来解耦上述优化问题中的两个函数，可得到一个等价的联合优化问题，为：
+
+$$
+\operatorname{minimize}_{\theta \in \mathbb{R}^{p}, \gamma \in \mathbb{R}^{m}} f(\theta)+g(\gamma) \quad \text { subject to } A \theta-\gamma=0.
+$$
+
+通过分裂算子、交替优化变量，ADMM将原联合优化问题化为若干子问题，并对原变量$(\theta,\gamma)$和对应的对偶变量$\alpha$交替优化更新，得到如下更新公式：
+
+$$
+\begin{aligned}
+\theta^{k+1} &=\underset{\theta \in \mathbb{R}^{p}}{\arg \min }\left(f(\theta)+\frac{\rho}{2}\left\|A \theta-\gamma^{k}+\rho^{-1} \alpha^{k}\right\|_{2}^{2}\right), \\
+\gamma^{k+1} &=\underset{\gamma \in \mathbb{R}^{m}}{\arg \min }\left(g(\gamma)+\frac{\rho}{2}\left\|A \theta^{k+1}-\gamma+\rho^{-1} \alpha^{k}\right\|_{2}^{2}\right), \\
+\alpha^{k+1} &=\alpha^{k}+\rho\left(A \theta^{k+1}-\gamma^{k+1}\right) .
+\end{aligned}
+$$
+
+其中，$\rho > 0$表示惩罚参数，该迭代过程的收敛速率为$O(1/k)$。
+
+### **aug-ADMM:**
+
+然而，
+
+
+
+
+
+
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
+
+## <span id="jump_2"> The solution path of the generalized lasso (2011, The Annals of Statistics) </span>
+
+
+
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
+
+## <span id="jump_3"> Sparse Bayesian learning and the relevance vector machine (2001, Journal of machine learning research) </span>
+
+
+
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
+
+## <span id="jump_4"> Analysis of sparse Bayesian learning (2002, NIPS) </span>
+
+
+
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
+
+## <span id="jump_5"> Fast marginal likelihood maximisation for sparse Bayesian models (2003, International workshop on artificial intelligence and statistics) </span>
 
 
 
