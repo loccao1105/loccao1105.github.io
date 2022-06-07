@@ -42,7 +42,7 @@ $$
 
 ### **Preliminary:**
 
-考虑如下形式的优化问题：
+&emsp;&emsp;考虑如下形式的优化问题：
 
 $$
 \operatorname{minimize}_{\theta \in \mathbb{R}^{p}} f(\theta)+g(A \theta),
@@ -54,7 +54,7 @@ $$
 \operatorname{minimize}_{\theta \in \mathbb{R}^{p}, \gamma \in \mathbb{R}^{m}} f(\theta)+g(\gamma) \quad \text { subject to } A \theta-\gamma=0.
 $$
 
-通过分裂算子、交替优化变量，ADMM将原联合优化问题化为若干子问题，并对原变量$(\theta,\gamma)$和对应的对偶变量$\alpha$交替优化更新，得到如下更新公式：
+&emsp;&emsp;通过分裂算子、交替优化变量，ADMM将原联合优化问题化为若干子问题，并对原变量$(\theta,\gamma)$和对应的对偶变量$\alpha$交替优化更新，得到如下更新公式：
 
 $$
 \begin{aligned}
@@ -68,7 +68,7 @@ $$
 
 ### **aug-ADMM:**
 
-然而，
+&emsp;&emsp;然而，上述ADMM的$\theta$-更新过程偶尔会难以计算，特别是当$A$是非对角阵时。为了克服这个困难，作者提出引入“增广”变量$(\gamma, \tilde{\gamma})$，其中
 
 
 
