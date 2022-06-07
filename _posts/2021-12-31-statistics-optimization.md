@@ -11,7 +11,7 @@ tags:
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
-My 2021 paper reading list in statistics & optimization, with special emphasis on **Bayesian method**, **sparse optimization** and **general LASSO problem**. . 
+My 2021 paper reading list in statistics & optimization, with special emphasis on **Bayesian method**, **sparse optimization** and **general LASSO problem**. 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
