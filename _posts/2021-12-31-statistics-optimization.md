@@ -45,7 +45,7 @@ $$
 &emsp;&emsp;考虑如下形式的优化问题：
 
 $$
-\operatorname{minimize}_{\theta \in \mathbb{R}^{p}} f(\theta)+g(A \theta),
+\operatorname{minimize}_{\theta \in \mathbb{R}^{p}} f(\theta)+g(A \theta), \tag{1} 
 $$
 
 其中$f(\cdot)$和$g(\cdot)$都是“简单”的凸函数，且$A\in \mathbb{R}^{m\times p}$。标准的ADMM算法首先通过引入等价约束$A \theta=\gamma$来解耦上述优化问题中的两个函数，可得到一个等价的联合优化问题，为：
@@ -66,14 +66,131 @@ $$
 
 其中，$\rho > 0$表示惩罚参数，该迭代过程的收敛速率为$O(1/k)$。
 
-### **aug-ADMM:**
+### **aug-ADMM框架:**
 
-&emsp;&emsp;然而，上述ADMM的$\theta$-更新过程偶尔会难以计算，特别是当$A$是非对角阵时。为了克服这个困难，作者提出引入“增广”变量$(\gamma, \tilde{\gamma})$，其中
-
-
+&emsp;&emsp;然而，上述ADMM的$\theta$-更新过程偶尔会难以计算，特别是当$A$是非对角阵时。为了克服这个困难，作者提出引入“增广”变量$(\gamma, \tilde{\gamma})$，其中$\tilde{\gamma}=\left(D-A^{\top} A\right)^{1 / 2} \theta$，且$D \in \mathbb{R}^{p \times p}$满足$D \succeq A^{\top} A$。则我们可以得到问题(1)的另一个等价形式，如下：
 
 
+$$
+\operatorname{minimize}_{\theta, \tilde{\gamma} \in \mathbb{R}^{,}, \gamma \in \mathbb{R}^{m}} f(\theta)+g(\gamma), \\
+\text { subject to }\left(\begin{array}{c}
+A \\
+\left(D-A^{\top} A\right)^{1 / 2}
+\end{array}\right) \theta-\left(\begin{array}{l}
+\gamma \\
+\tilde{\gamma}
+\end{array}\right)=0. \tag{2}
+$$
 
+对优化问题(2)利用标准的ADMM算法和简单化简，可以得到如下更新公式
+
+$$
+\begin{aligned}
+\theta^{k+1} &=\underset{\theta \in \mathbb{R}^{p}}{\arg \min }\left(f(\theta)+\left(2 \alpha^{k}-\alpha^{k-1}\right)^{\top} A \theta+\frac{\rho}{2}\left(\theta-\theta^{k}\right)^{\top} D\left(\theta-\theta^{k}\right)\right), \\
+\gamma^{k+1} &=\underset{\gamma \in \mathbb{R}^{m}}{\arg \min }\left(g(\gamma)+\frac{\rho}{2}\left\|A \theta^{k+1}-\gamma+\rho^{-1} \alpha^{k}\right\|_{2}^{2}\right), \\
+\alpha^{k+1} &=\alpha^{k}+\rho\left(A \theta^{k+1}-\gamma^{k+1}\right).
+\end{aligned}
+$$
+
+&emsp;&emsp;可以看到，上述更新公式中不再设计增广变量$\tilde{\gamma}$。当$D = A^{\top} A$时，增广ADMM回退为标准的ADMM算法。aug-ADMM的主要优势是增加了算法的灵活性，即可自由选择$D$来简化$\theta$的更新。
+
+
+### **aug-ADMM推导细节:**
+&emsp;&emsp;首先，我们对优化问题(2)利用标准的ADMM算法，可以得到若干子问题，其更新如下：
+
+$$
+\begin{aligned}
+\theta^{k+1}=& \underset{\theta \in \mathbb{R}^{p}}{\arg \min }\left(f(\theta)+\frac{\rho}{2}\left(\left\|A \theta-\gamma^{k}+\rho^{-1} \alpha^{k}\right\|_{2}^{2}\right.\right. \\
+&\left.\left.\quad+\left\|\left(D-A^{\top} A\right)^{1 / 2} \theta-\tilde{\gamma}^{k}+\rho^{-1} \tilde{\alpha}^{k}\right\|_{2}^{2}\right)\right), \tag{3a}\\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\gamma^{k+1}=& \underset{\gamma \in \mathbb{R}^{m}}{\arg \min }\left(g(\gamma)+\frac{\rho}{2}\left\|A \theta^{k+1}-\gamma+\rho^{-1} \alpha^{k}\right\|_{2}^{2}\right),  \tag{3b}
+\end{aligned}
+$$
+
+$$
+\tilde{\gamma}^{k+1}=\left(D-A^{\top} A\right)^{1 / 2} \theta^{k+1}+\rho^{-1} \tilde{\alpha}^{k}, \tag{3c}
+$$
+
+$$
+\alpha^{k+1}= \alpha^{k}+\rho\left(A \theta^{k+1}-\gamma^{k+1}\right), \tag{3d}
+$$
+
+$$
+\tilde{\alpha}^{k+1}=\tilde{\alpha}^{k}+\rho\left(\left(D-A^{\top} A\right)^{1 / 2} \theta^{k+1}-\tilde{\gamma}^{k+1}\right), \tag{3e}
+$$
+
+其中$\alpha\in \mathbb{R}^m$和$\tilde{\alpha}\in \mathbb{R}^p$均表示相关的对偶变量。
+
+&emsp;&emsp;然后，结合(3c)和(3e)，可以得到$\tilde{\alpha}^{k+1}=0$。再将(3c)代入(3a)中，$\theta$的更新过程可以化简为
+
+$$
+\theta^{k+1}=\underset{\theta \in \mathbb{R}^{p}}{\arg \min }\left(f(\theta)+\frac{\rho}{2}\left(\left\|A \theta-\gamma^{k}+\rho^{-1} \alpha^{k}\right\|_{2}^{2}+\left\|\left(D-A^{\top} A\right)^{1 / 2}\left(\theta-\theta^{k}\right)\right\|_{2}^{2}\right)\right). \tag{4}
+$$
+
+&emsp;&emsp;接着，结合式(3d)，可以得到$\theta$的最终更新公式：
+
+$$
+\theta^{k+1} =\underset{\theta \in \mathbb{R}^{p}}{\arg \min }\left(f(\theta)+\left(2 \alpha^{k}-\alpha^{k-1}\right)^{\top} A \theta+\frac{\rho}{2}\left(\theta-\theta^{k}\right)^{\top} D\left(\theta-\theta^{k}\right)\right).
+$$
+
+### **aug-ADMM的进一步简化（没看懂）:**
+
+&emsp;&emsp;同时，结合(3b)和(3d)，可以得到
+
+$$
+\rho^{-1} \alpha^{k+1}=\rho^{-1} \alpha^{k}+A \theta^{k+1}-\operatorname{prox}_{\rho^{-1} g(\cdot)}\left(\rho^{-1} \alpha^{k}+A \theta^{k+1}\right).
+$$
+
+&emsp;&emsp;然后，结合Moreau's identity，可以将$\alpha$的更新公式简化为
+
+$$
+\alpha^{k+1}=\operatorname{prox}_{\rho g^{*}(\cdot)}\left(\alpha^{k}+\rho A \theta^{k+1}\right).
+$$
+
+&emsp;&emsp;注1：Moreau's identity建立了关于$\Omega(\cdot)$的近端映射和其共轭函数$\Omega^{*}(\cdot)$的关系，即对任意的$t>0$，有
+
+$$
+u=\operatorname{prox}_{t \Omega(\cdot)}(u)+t \operatorname{prox}_{t^{-1} \Omega^{*}(\cdot)}\left(t^{-1} u\right),
+$$
+
+其中近端映射定义为
+
+$$
+\operatorname{prox}_{\Omega(\cdot)}(u)=\underset{v}{\arg \min }\left(\Omega(v)+\frac{1}{2}\|u-v\|_{2}^{2}\right),
+$$
+
+且共轭函数定义为
+
+$$
+\Omega^{*}(v):=\sup _{u}\langle u, v\rangle-\Omega(u),
+$$
+
+它为凸函数。关于aug-ADMM的收敛性质在此不做详述（不懂）。
+
+&emsp;&emsp;注2：文中关于$D$的选择建议为$D=\delta I$，其中$\delta \ge \|A\|^2$。
+
+
+### **aug-ADMM的实验结果:**
+
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/aug-ADMM-ex1.jpg" width="800px" height="500px"> 
+</div>
+
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/aug-ADMM-ex2.jpg" width="800px" height="500px"> 
+</div>
+
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/aug-ADMM-ex3.jpg" width="800px" height="500px"> 
+</div>
+
+<div style="text-align: center">
+<img src="https://hauliang.github.io/read-list-file/aug-ADMM-ex4.jpg" width="800px" height="500px"> 
+</div>
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
