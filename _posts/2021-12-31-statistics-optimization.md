@@ -99,16 +99,12 @@ $$
 &emsp;&emsp;首先，我们对优化问题(2)利用标准的ADMM算法，可以得到若干子问题，其更新如下：
 
 $$
-\begin{aligned}
-\theta^{k+1}=& \underset{\theta \in \mathbb{R}^{p}}{\arg \min }\left(f(\theta)+\frac{\rho}{2}\left(\left\|A \theta-\gamma^{k}+\rho^{-1} \alpha^{k}\right\|_{2}^{2}\right.\right. \\
-&\left.\left.\quad+\left\|\left(D-A^{\top} A\right)^{1 / 2} \theta-\tilde{\gamma}^{k}+\rho^{-1} \tilde{\alpha}^{k}\right\|_{2}^{2}\right)\right), \tag{3a}\\
-\end{aligned}
+\theta^{k+1}= \underset{\theta \in \mathbb{R}^{p}}{\arg \min }\left(f(\theta)+\frac{\rho}{2}\left(\left\|A \theta-\gamma^{k}+\rho^{-1} \alpha^{k}\right\|_{2}^{2}\right.\right. \\
+\left.\left.\quad+\left\|\left(D-A^{\top} A\right)^{1 / 2} \theta-\tilde{\gamma}^{k}+\rho^{-1} \tilde{\alpha}^{k}\right\|_{2}^{2}\right)\right), \tag{3a}\\
 $$
 
 $$
-\begin{aligned}
-\gamma^{k+1}=& \underset{\gamma \in \mathbb{R}^{m}}{\arg \min }\left(g(\gamma)+\frac{\rho}{2}\left\|A \theta^{k+1}-\gamma+\rho^{-1} \alpha^{k}\right\|_{2}^{2}\right),  \tag{3b}
-\end{aligned}
+\gamma^{k+1}=\underset{\gamma \in \mathbb{R}^{m}}{\arg \min }\left(g(\gamma)+\frac{\rho}{2}\left\|A \theta^{k+1}-\gamma+\rho^{-1} \alpha^{k}\right\|_{2}^{2}\right),  \tag{3b}
 $$
 
 $$
