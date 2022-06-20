@@ -194,13 +194,71 @@ $$
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
+
+
 ## <span id="jump_2"> The solution path of the generalized lasso (2011, The Annals of Statistics) </span>
 
+&emsp;&emsp;广义LASSO问题可以被描述为：
+
+$$
+\underset{\beta \in \mathbb{R}^{p}}{\operatorname{minimize}} \frac{1}{2}\|y-X \beta\|_{2}^{2}+\lambda\|D \beta\|_{1}, \tag{5}
+$$
+
+其中$\lambda \ge 0$表示稀疏参数，$D\in \mathbb{R}^{m\times p}$表示特定的惩罚矩阵，1-范数约束代表了结构稀疏约束。
+
+&emsp;&emsp;主要学习了文章中“何时一个广义LASSO问题退化为LASSSO问题”部分，即"3. When does a generalized lasso problem reduce to a lasso problem"。
+
+### **情况1: 矩阵$D$可逆**
+&emsp;&emsp;首先，如果$D$是一个$p\times p$维的可逆矩阵，那么，我们可以直接引入变量$\theta = D\beta$，结合矩阵的可逆性将(5)转换为LASSO问题，如下：
+
+$$
+\underset{\theta \in \mathbb{R}^{p}}{\operatorname{minimize}} \frac{1}{2}\left\|y-X D^{-1} \theta\right\|_{2}^{2}+\lambda\|\theta\|_{1}.
+$$
+
+### **情况2: 矩阵$D$不可逆但行满秩**
+
+&emsp;&emsp;更一般地，如果$D$是一个$m\times p$维的矩阵且$rank(D)=m$（暗含$m\le p$），则我们仍然可以通过变量替换的方式将问题(5)转换为一个LASSO问题。
+
+&emsp;&emsp;首先，我们可以构造一个$(p-m)\times p$维的矩阵$A$，它的行与$D$的每一行正交，从而构造一个$p\times p$维的满秩矩阵$\widetilde{D}=\left[\begin{array}{l}D \\ A\end{array}\right]$，即$rank(\widetilde{D})=p$。然后，我们可以将变量转换为$\theta = (\theta_1,\theta_2)^T=\widetilde{D}\beta$，使得广义LASSO问题(2)变换为
+
+$$
+\operatorname{minimize}_{\theta \in \mathbb{R}^{p}} \frac{1}{2}\left\|y-X \widetilde{D}^{-1} \theta\right\|_{2}^{2}+\lambda\left\|\theta_{1}\right\|_{1}. \tag{6}
+$$
+
+可以注意到(6)除了一范数约束只对变量$\theta$的部分变量$\theta_1$进行约束外，这基本上是一个一般的LASSO问题。
+
+&emsp;&emsp;接下来，引入符号$X \widetilde{D}^{-1} \theta=X_{1} \theta_{1}+X_{2} \theta_{2}$；然后我们可以发现，对于$\theta_2$，这是一个最小二乘问题：
+
+$$
+\operatorname{minimize}_{\theta_2 \in \mathbb{R}^{p}} \frac{1}{2}\left\|y-X_{1} \theta_{1}+X_{2} \theta_{2}\right\|_{2}^{2},
+$$
+
+即
+
+$$
+\hat{\theta}_{2}=\left(X_{2}^{T} X_{2}\right)^{-1} X_{2}^{T}\left(y-X_{1} \hat{\theta}_{1}\right) .
+$$
+
+&emsp;&emsp;进一步地，我们可以将问题(6)重写为
+
+$$
+\operatorname{minimize}_{\theta_{1} \in \mathbb{R}^{m}} \frac{1}{2}\left\|(I-P) y-(I-P) X_{1} \theta_{1}\right\|_{2}^{2}+\lambda\left\|\theta_{1}\right\|_{1}, \tag{7}
+$$
+
+其中$P=X_{2}^{T}\left(X_{2}^{T} X_{2}\right)^{-1} X_{2}^{T}$。利用算法，如LARS，ADMM对LASSO问题(7)进行求解后，可以得到原始广义LASSO问题的解：
+
+$$
+  \hat{\beta}=\widetilde{D}^{-1} \hat{\theta}.
+$$
 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_3"> Sparse Bayesian learning and the relevance vector machine (2001, Journal of machine learning research) </span>
+
+
+
+
 
 
 
@@ -210,9 +268,19 @@ $$
 
 
 
+
+
+
+
+
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## <span id="jump_5"> Fast marginal likelihood maximisation for sparse Bayesian models (2003, International workshop on artificial intelligence and statistics) </span>
+
+
+
+
+
 
 
 
