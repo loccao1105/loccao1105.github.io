@@ -52,7 +52,7 @@ Publications
 ------
 <ol>
 
-<li><p> <b>A Robust Low-Rank Matrix Completion Based On Truncated Nuclear Norm and Lp-norm</b><br>
+<li><p> <b>A Robust Low-Rank Matrix Completion Based on Truncated Nuclear Norm and Lp-norm</b><br>
 <b>Liang, Hao </b>and Li, Kang* and Huang, Jianjun<br>
 <i>The Journal of Supercomputing</i>, 2022 <br>
 
