@@ -33,9 +33,14 @@ Academic records
 
 Awards & Honors
 ------
+* **Outstanding Student Caders**, Xiamen University, 2022
+* **The First Price Scholarship**, Xiamen University, 2022
 * **Outstanding Volunteers**, Xiamen University, 2022
 * **Outstanding Graduate Students**, Xiamen University, 2021
 * **Outstanding Graduates**, Shenzhen University, 2020
+* **The First Price Scholarship**, Shenzhen University, 2019
+* **The Second Price Academic Scholarship**, Shenzhen University, 2019
+* **The Second Price Academic Scholarship**, Shenzhen University, 2017
 
 Skills
 ------
