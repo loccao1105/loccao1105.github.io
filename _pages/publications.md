@@ -16,6 +16,14 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
 
 <ol>
 
+<li><p> <b>Sparse optimization for nonlinear group delay mode estimation</b><br>
+<b>Liang, Hao</b> and Ding, Xinghao and Jakobsson, Andreas and Tu, Xiaotong and Huang, Yue<br>
+<i>The Journal of the Acoustical Society of America (JASA)</i>, 2022 <br>
+<a href="https://doi.org/10.1121/10.0014696" class="textlink" target="_blank">[pdf]</a>
+<a href="https://github.com/HauLiang/NGDME" class="textlink" target="_blank">[codes]</a>
+</p>
+</li>
+
 <li><p> <b>A Robust Low-Rank Matrix Completion Based on Truncated Nuclear Norm and Lp-norm</b><br>
 <b>Liang, Hao</b> and Li, Kang* and Huang, Jianjun<br>
 <i>The Journal of Supercomputing</i>, 2022 <br>
