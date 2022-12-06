@@ -33,6 +33,7 @@ Academic records
 
 Awards & Honors
 ------
+* **Outstanding Graduate Students**, Xiamen University, 2022
 * **Outstanding Student Caders**, Xiamen University, 2022
 * **The First Price Scholarship**, Xiamen University, 2022
 * **Outstanding Volunteers**, Xiamen University, 2022
@@ -51,6 +52,12 @@ Skills
 Publications
 ------
 <ol>
+
+<li><p> <b>Sparse optimization for nonlinear group delay mode estimation</b><br>
+<b>Liang, Hao</b> and Ding, Xinghao and Jakobsson, Andreas and Tu, Xiaotong and Huang, Yue<br>
+<i>The Journal of the Acoustical Society of America (JASA)</i>, 2022 <br>
+</p>
+</li>
 
 <li><p> <b>A Robust Low-Rank Matrix Completion Based on Truncated Nuclear Norm and Lp-norm</b><br>
 <b>Liang, Hao </b>and Li, Kang* and Huang, Jianjun<br>
