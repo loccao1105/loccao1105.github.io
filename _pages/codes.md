@@ -12,7 +12,7 @@ You can also find my codes on my [Github repositories](https://github.com/HauLia
 
 Codes for Papers
 ------
-* [NGDME](https://github.com/HauLiang/Lp-TNN) for the ["Sparse Nonlinear Group Delay Mode Estimation"](https://doi.org/10.1121/10.0014696)
+* [NGDME](https://github.com/HauLiang/NGDME) for the ["Sparse Nonlinear Group Delay Mode Estimation"](https://doi.org/10.1121/10.0014696)
 
 * [Lp-TNN](https://github.com/HauLiang/Lp-TNN) for the ["A Robust Low-Rank Matrix Completion Based on Truncated Nuclear Norm and Lp-norm"](https://doi.org/10.1007/s11227-022-04385-8)
 
