@@ -26,6 +26,8 @@ Codes for Papers
 
 Codes for LaTex Template
 ------
+* LaTex Template for [PhD Application](https://github.com/HauLiang/PhD-Application-Template)
+
 * LaTex Template for [Author Rebuttal to Paper Reviewers (Conference)](https://github.com/HauLiang/Rebuttal-to-Reviewer)
 
 * LaTex Template for [Reviewer View Manuscripts and Score](https://github.com/HauLiang/Review-Template)
