@@ -13,7 +13,10 @@ redirect_from:
 
 Education
 ------
-* Master in [Xiamen University (厦门大学)](https://www.xmu.edu.cn/), Xiamen, CHN, 2020-2023 (expected)
+* Ph.D in [Hong Kong University of Science and Technology (Guangzhou) (香港科技大学)](https://www.xmu.edu.cn/), Guangzhou, CHN, 2023-？
+  * [Internet of Things Thrust](https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/internet-of-things/), [Information Hub](https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/)
+  * Advised by Assoc Prof. [Hong Xing](https://scholar.google.com/citations?user=rfhrifoAAAAJ&hl=zh-CN&oi=ao)
+* Master in [Xiamen University (厦门大学)](https://www.xmu.edu.cn/), Xiamen, CHN, 2020-2023 
   * Major in Signal and Information Processing
   * [School of Informatics](https://informatics.xmu.edu.cn/), [Smart DSP Lab](https://xmu-smartdsp.github.io/index.html)
   * Advised by Prof. [Xinghao Ding](https://scholar.google.com/citations?user=k5hVBfMAAAAJ&hl=zh-CN&oi=ao) (co-advised by [Xiaotong Tu](https://tormii.github.io/))
