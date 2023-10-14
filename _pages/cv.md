@@ -69,6 +69,12 @@ Mao, Yijin and Tu, Xiaotong and Abbas, Saqlain and <b>Liang, Hao</b> and Huang, 
 </p>
 </li>
 
+<li><p> <b>Acoustic-Net: A Novel Neural Network for Sound Localization and Quantification</b><br>
+Zhou, Guanxing and <b>Liang, Hao</b> and Ding, Xinghao and Huang, Yue and Tu, Xiaotong* and Abbas, Saqlain<br>
+in <i>19th Asia-Pacific Vibration Conference (APVC2021)</i>, 2022 <br>
+</p>
+</li>
+
 <li><p> <b>Sparse Optimization for Nonlinear Group Delay Mode Estimation</b><br>
 <b>Liang, Hao</b> and Ding, Xinghao and Jakobsson, Andreas and Tu, Xiaotong and Huang, Yue<br>
 <i>The Journal of the Acoustical Society of America (JASA)</i>, 2022 <br>
