@@ -38,6 +38,8 @@ Codes for LaTex Template
 
 Others
 ------
+* [Several classic Acoustic Beamforming methods (scan-frequency)](https://github.com/HauLiang/Acoustic-Beamforming-Advanced) for acoustic imaging
+
 * [Several classic Acoustic Beamforming methods (fixed-frequency)](https://github.com/HauLiang/Acoustic-Beamforming-Methods) for acoustic imaging
 
 * [Several classic Matrix Completion methods](https://github.com/HauLiang/Matrix-Completion-Methods) for low-rank matrix completion
