@@ -58,13 +58,13 @@ Publications
 
 
 <li><p> <b>Learning to Sound Imaging by a Model-based Interpretable Network</b><br>
-Zhang, Yonghua and Tu, Xiaotong and Abbas, Saqlain and <b>Liang, Hao</b> and Huang, Yue and Ding, Xinghao<br>
+Zhang, Yonghua and Tu, Xiaotong* and Abbas, Saqlain and <b>Liang, Hao</b> and Huang, Yue and Ding, Xinghao<br>
 <i>Signal Processing</i>, 2023 <br>
 </p>
 </li>
 
 <li><p> <b>Adaptive Nonlinear Group Delay Mode Estimation</b><br>
-Mao, Yijin and Tu, Xiaotong and Abbas, Saqlain and <b>Liang, Hao</b> and Huang, Yue and Ding, Xinghao<br>
+Mao, Yijin and Tu, Xiaotong* and Abbas, Saqlain and <b>Liang, Hao</b> and Huang, Yue and Ding, Xinghao<br>
 <i>Signal Processing</i>, 2023 <br>
 </p>
 </li>
