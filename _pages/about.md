@@ -16,7 +16,7 @@ I am currently a Ph.D student in the [Internet of Things Thrust](https://www.hku
 
 Research interests
 ------
-My research interests lie in **non-stationary signal processing** and **machine learning**, and in particular **sparse optimization** and **model-driven deep learning**
+My research interests lie in **decentralized federated learning**, **non-stationary signal processing** and **machine learning**, and in particular **sparse optimization** and **model-driven deep learning**
 
 Hobbies
 ------
@@ -26,4 +26,4 @@ For more
 ------
 Should you have any further interests or questions, please feel free to contact me ☺.
 
-*(__Email__: haoliang@stu.xmu.edu.cn)*
+*(__Email__: haoliang2023@hotmail.com)*
