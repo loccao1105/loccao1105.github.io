@@ -17,14 +17,14 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
 <ol>
 
 <li><p> <b>Learning to Sound Imaging by a Model-based Interpretable Network</b><br>
-Zhang, Yonghua and Tu, Xiaotong and Abbas, Saqlain and <b>Liang, Hao</b> and Huang, Yue and Ding, Xinghao<br>
+Zhang, Yonghua and Tu, Xiaotong* and Abbas, Saqlain and <b>Liang, Hao</b> and Huang, Yue and Ding, Xinghao<br>
 <i>Signal Processing</i>, 2023 <br>
 <a href="https://www.sciencedirect.com/science/article/pii/S0165168423003559" class="textlink" target="_blank">[pdf]</a>
 </p>
 </li>
 
 <li><p> <b>Adaptive Nonlinear Group Delay Mode Estimation</b><br>
-Mao, Yijin and Tu, Xiaotong and Abbas, Saqlain and <b>Liang, Hao</b> and Huang, Yue and Ding, Xinghao<br>
+Mao, Yijin and Tu, Xiaotong* and Abbas, Saqlain and <b>Liang, Hao</b> and Huang, Yue and Ding, Xinghao<br>
 <i>Signal Processing</i>, 2023 <br>
 <a href="https://www.sciencedirect.com/science/article/pii/S0165168423002554" class="textlink" target="_blank">[pdf]</a>
 <a href="https://github.com/YijinMao/ANGDME" class="textlink" target="_blank">[codes]</a>
