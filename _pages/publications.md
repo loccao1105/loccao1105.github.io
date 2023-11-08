@@ -32,7 +32,7 @@ Mao, Yijin and Tu, Xiaotong* and Abbas, Saqlain and <b>Liang, Hao</b> and Huang,
 </li>
 
 <li><p> <b>Sparse Optimization for Nonlinear Group Delay Mode Estimation</b><br>
-<b>Liang, Hao</b> and Ding, Xinghao and Jakobsson, Andreas and Tu, Xiaotong and Huang, Yue<br>
+<b>Liang, Hao</b> and Ding, Xinghao and Jakobsson, Andreas and Tu, Xiaotong* and Huang, Yue<br>
 <i>The Journal of the Acoustical Society of America (JASA)</i>, 2022 <br>
 <a href="https://doi.org/10.1121/10.0014696" class="textlink" target="_blank">[pdf]</a>
 <a href="https://github.com/HauLiang/NGDME" class="textlink" target="_blank">[codes]</a>
