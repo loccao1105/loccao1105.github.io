@@ -56,6 +56,12 @@ Publications
 ------
 <ol>
 
+<li><p> <b>Adaptive Sparse Estimation of Nonlinear Chirp Signals using Laplace Priors</b><br>
+Tu, Xiaotong and <b>Liang, Hao*</b> and Jakobsson, Andreas and Huang, Yue and Ding, Xinghao<br>
+<i>The Journal of the Acoustical Society of America (JASA)</i>, 2024 <br>
+</p>
+</li>
+
 
 <li><p> <b>Learning to Sound Imaging by a Model-based Interpretable Network</b><br>
 Zhang, Yonghua and Tu, Xiaotong* and Abbas, Saqlain and <b>Liang, Hao</b> and Huang, Yue and Ding, Xinghao<br>
