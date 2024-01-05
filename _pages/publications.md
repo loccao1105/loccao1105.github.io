@@ -18,7 +18,7 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
 
 <li><p> <b>Adaptive Sparse Estimation of Nonlinear Chirp Signals using Laplace Priors</b><br>
 Tu, Xiaotong and <b>Liang, Hao*</b> and Jakobsson, Andreas and Huang, Yue and Ding, Xinghao<br>
-<i>The Journal of the Acoustical Society of America (JASA)</i>, 2023 <br>
+<i>The Journal of the Acoustical Society of America (JASA)</i>, 2024 <br>
 <a href="https://doi.org/10.1121/10.0024248" class="textlink" target="_blank">[pdf]</a>
 <a href="https://github.com/HauLiang/ANCME" class="textlink" target="_blank">[codes]</a>
 </p>
