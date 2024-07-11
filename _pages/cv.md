@@ -57,7 +57,7 @@ Publications
 <ol>
 
 <li><p> <b>Learning an Interpretable End-to-End Network for Real-Time Acoustic Beamforming</b><br>
-<b>Liang, Hao*</b> and Zhou, Guanxing, and Tu, Xiaotong, and Jakobsson, Andreas and Ding, Xinghao and Huang, Yue<br>
+<b>Liang, Hao</b> and Zhou, Guanxing, and Tu, Xiaotong*, and Jakobsson, Andreas and Ding, Xinghao and Huang, Yue<br>
 <i>The Journal of Sound and Vibration (JSV)</i>, 2024 <br>
 </p>
 </li>
