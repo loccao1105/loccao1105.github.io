@@ -12,6 +12,8 @@ You can also find my codes on my [Github repositories](https://github.com/HauLia
 
 Codes for Papers
 ------
+* [Baseline of DAMAS-FISTA-Net](https://github.com/HauLiang/Acoustic-Beamforming-Advanced) for the ["Learning an Interpretable End-to-End Network for Real-Time Acoustic Beamforming"](https://doi.org/10.1016/j.jsv.2024.118620)
+
 * [ANCME](https://github.com/HauLiang/ANCME) for the ["Adaptive Sparse Estimation of Nonlinear Chirp Signals using Laplace Priors"](https://doi.org/10.1121/10.0024248)
 
 * [NGDME](https://github.com/HauLiang/NGDME) for the ["Sparse Nonlinear Group Delay Mode Estimation"](https://doi.org/10.1121/10.0014696)

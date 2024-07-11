@@ -16,6 +16,15 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
 
 <ol>
 
+<li><p> <b>Learning an Interpretable End-to-End Network for Real-Time Acoustic Beamforming</b><br>
+<b>Liang, Hao*</b> and Zhou, Guanxing, and Tu, Xiaotong, and Jakobsson, Andreas and Ding, Xinghao and Huang, Yue<br>
+<i>The Journal of Sound and Vibration (JSV)</i>, 2024 <br>
+<a href="https://doi.org/10.1016/j.jsv.2024.118620" class="textlink" target="_blank">[pdf]</a>
+<a href="https://github.com/HauLiang/Acoustic-Beamforming-Advanced" class="textlink" target="_blank">[baseline]</a>
+<a href="https://github.com/HauLiang/DAMAS-FISTA-Net" class="textlink" target="_blank">[codes]</a>
+</p>
+</li>
+
 <li><p> <b>Adaptive Sparse Estimation of Nonlinear Chirp Signals using Laplace Priors</b><br>
 Tu, Xiaotong and <b>Liang, Hao*</b> and Jakobsson, Andreas and Huang, Yue and Ding, Xinghao<br>
 <i>The Journal of the Acoustical Society of America (JASA)</i>, 2024 <br>
