@@ -1,8 +1,7 @@
 ---
-title: 'Papers for Graph Neural Network (2020)'
-date: 2020-11-30
-excerpt: "My reading list for <b>graph neural network</b> papers in 2020."
-permalink: /read-list/2020/graph-neural-network/
+title: 'Summary for Graph Neural Network (GNN)'
+excerpt: "My reading list for <b>graph neural network</b> papers."
+permalink: /read-list/graph-neural-network/
 tags:
   - Graph Embedding
   - Link Prediction
@@ -11,7 +10,7 @@ tags:
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
-My 2020 paper reading list in graph neural network (GNN), with special emphasis on **graph embedding**, **alignment** and **link prediction**. 
+My paper reading list in graph neural network (GNN), with special emphasis on **graph embedding**, **alignment** and **link prediction**. 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
