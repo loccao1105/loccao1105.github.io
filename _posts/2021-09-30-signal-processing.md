@@ -1,8 +1,8 @@
 ---
-title: 'Papers for Signal Processing (2021)'
+title: 'Summary for Signal Decomposition (2021)'
 date: 2021-09-30
-excerpt: "My reading list for <b>signal processing</b> papers in 2021."
-permalink: /read-list/2021/signal-processing/
+excerpt: "My reading list for <b>signal decomposition</b> papers in 2021."
+permalink: /read-list/2021/signal-decomposition/
 tags:
   - non-stationary signal
   - sparse optimization
