@@ -1,8 +1,8 @@
 ---
-title: 'Papers for Model-Driven Deep Learning (2021)'
-date: 2021-12-31
-excerpt: "My reading list for <b>model-driven deep learning</b> papers in 2021."
-permalink: /read-list/2021/model-driven-deep-learning/
+title: 'Papers for Model-Driven Deep Learning (2022)'
+date: 2022-09-30
+excerpt: "My reading list for <b>model-driven deep learning</b> papers in 2022."
+permalink: /read-list/2022/model-driven-deep-learning/
 tags:
   - Deep Learning
   - Model-Driven Method
@@ -10,7 +10,7 @@ tags:
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
-My 2021 paper reading list in **model-driven deep learning**. 
+My 2022 paper reading list in **model-driven deep learning**. 
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
@@ -22,7 +22,7 @@ My 2021 paper reading list in **model-driven deep learning**.
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 参考PPT（2021.08.17组会）：[Model-driven deep learning —— differentiable programming](https://hauliang.github.io/read-list-file/Model-driven-deep-learning-differentiable-programming.pdf)。
- 
+
 
 <hr style="height:0px;border:none;border-top:3px solid #555555;" />
 

@@ -1,6 +1,6 @@
 ---
 title: 'Papers for Signal Processing (2021)'
-date: 2021-12-31
+date: 2021-09-30
 excerpt: "My reading list for <b>signal processing</b> papers in 2021."
 permalink: /read-list/2021/signal-processing/
 tags:
