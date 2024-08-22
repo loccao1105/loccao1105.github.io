@@ -1,5 +1,5 @@
 ---
-title: 'Summary for Acoustic Beamforming (2022)'
+title: 'Summary of Acoustic Beamforming (2022)'
 date: 2022-09-30
 excerpt: "My reading list for <b>acoustic beamforming</b> papers in 2022."
 permalink: /read-list/2022/acoustic-beamforming/

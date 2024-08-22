@@ -1,5 +1,5 @@
 ---
-title: 'Summary for Graph Neural Network (2020)'
+title: 'Summary of Graph Neural Network (2020)'
 date: 2020-09-30
 excerpt: "My reading list for <b>graph neural network</b> papers in 2020."
 permalink: /read-list/2020/graph-neural-network/

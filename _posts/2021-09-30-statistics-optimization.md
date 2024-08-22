@@ -1,5 +1,5 @@
 ---
-title: 'Summary for Statistics & Optimization (2021)'
+title: 'Summary of Statistics & Optimization (2021)'
 date: 2021-09-30
 excerpt: "My reading list for <b>statistics & optimization</b> papers in 2021."
 permalink: /read-list/2021/statistics-optimization/

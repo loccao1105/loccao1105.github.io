@@ -1,5 +1,5 @@
 ---
-title: 'Summary for Model-Driven Deep Learning (2022)'
+title: 'Summary of Model-Driven Deep Learning (2022)'
 date: 2022-09-30
 excerpt: "My reading list for <b>model-driven deep learning</b> papers in 2022."
 permalink: /read-list/2022/model-driven-deep-learning/

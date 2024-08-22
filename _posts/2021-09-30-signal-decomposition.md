@@ -1,20 +1,19 @@
 ---
-title: 'Summary for Signal Decomposition (2021)'
+title: 'Summary of Signal Decomposition (2021)'
 date: 2021-09-30
 excerpt: "My reading list for <b>signal decomposition</b> papers in 2021."
 permalink: /read-list/2021/signal-decomposition/
 tags:
-  - non-stationary signal
-  - sparse optimization
+  - Non-Stationary Signal Modelling
+  - Sparse Optimization
 ---
 
-This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
-Headings are cool
+My 2021 paper reading list in signal decomposition, with special emphasis on **non-stationary signal modeling** and **sparse optimization**. 
+
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
+
+Paper List
 ======
 
-You can have many headings
-======
-
-Aren't headings cool?
-------
