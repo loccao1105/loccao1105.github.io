@@ -16,7 +16,11 @@ tags:
 >
 > [3] Levin D A, Peres Y. Markov chains and mixing times[M]. American Mathematical Soc., 2017.
 
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
+Emm... It seems that this Markdown file isn't displaying correctly on this GitHub.io Pages. You can download it from the "./_posts/" folder and view it locally using a Markdown reader.
+
+<hr style="height:0px;border:none;border-top:3px solid #555555;" />
 
 ## 1. Preliminary
 
