@@ -37,7 +37,7 @@ $$
 $$
 **(2) Transition probability (转移概率)**
 
-The condition probability, $P\{X_{n+1}=j \mid X_n=i\}$, is called the (one-step) transition probability, denoted as $p_{ij}$. The value $p_{ij}$ represents the probability that the process will, when in state $i$, next make a transition into state $j$.
+The condition probability, $P\left\{X_{n+1}=j \mid X_n=i\right\}$, is called the (one-step) transition probability, denoted as $p_{ij}$. The value $p_{ij}$ represents the probability that the process will, when in state $i$, next make a transition into state $j$.
 
 **(3) Time homogeneity (时齐性)**
 
