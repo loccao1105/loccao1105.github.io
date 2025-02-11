@@ -26,7 +26,7 @@ Emm... It seems that this Markdown file isn't displaying correctly on this GitHu
 
 **(1) Markov chain (马尔可夫链):**
 
-Consider a stochastic process $\{X_n,n=0,1,2,...\}$ that takes on a finite or countable number of possible values. If such a stochastic process is a Markov chain, then for all $n\ge0$ and all states $i_0,i_1,...,i_{n-1},i,j$, 
+Consider a stochastic process $\begin{equation}\left\{X_n,n=0,1,2,...\right\}\end{equation}$ that takes on a finite or countable number of possible values. If such a stochastic process is a Markov chain, then for all $n\ge0$ and all states $i_0,i_1,...,i_{n-1},i,j$, 
 
 $$
 \begin{equation}
@@ -39,7 +39,8 @@ $$
 
 **(2) Transition probability (转移概率)**
 
-The condition probability, $P\left\{X_{n+1}=j \mid X_n=i\right\}$, is called the (one-step) transition probability, denoted as $p_{ij}$. The value $p_{ij}$ represents the probability that the process will, when in state $i$, next make a transition into state $j$.
+The condition probability, $\begin{equation}
+P\left\{X_{n+1}=j \mid X_n=i\right\}\end{equation}$, is called the (one-step) transition probability, denoted as $p_{ij}$. The value $p_{ij}$ represents the probability that the process will, when in state $i$, next make a transition into state $j$.
 
 **(3) Time homogeneity (时齐性)**
 
@@ -64,7 +65,9 @@ p_{i0} & p_{i1} & p_{i2} & \cdots \\
 $$
 
 We have: 
+
 (i) $p_{ij}\ge0, \ i,j\ge0$, 
+
 (ii) $\sum_{j=0}^\infty p_{ij}=1,\ i=0,1,...$
 
 
