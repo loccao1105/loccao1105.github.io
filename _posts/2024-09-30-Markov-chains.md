@@ -35,7 +35,7 @@ $$
 $$
 **(2) Transition probability (转移概率)**
 
-The condition probability, $P\left\{X_{n+1}=j \mid X_n=i\right\}$, is called the (one-step) transition probability, denoted as $p_{ij}$. The value $p_{ij}$ represents the probability that the process will, when in state $i$, next make a transition into state $j$.
+The condition probability, $P\{X_{n+1}=j \mid X_n=i\}$, is called the (one-step) transition probability, denoted as $p_{ij}$. The value $p_{ij}$ represents the probability that the process will, when in state $i$, next make a transition into state $j$.
 
 **(3) Time homogeneity (时齐性)**
 
@@ -134,11 +134,12 @@ $$
 
 For any states $i$ and $j$ define $f_{ij}^{(n)}$ to be the probability that, starting in $i$, the first transition into $j$ occurs at time $n$, i.e.,
 $$
+\begin{equation}
 \begin{aligned}
 f_{ij}^{(0)} &= \delta_{ij} = \begin{cases}0, & i \neq j \\ 1, & i=j\end{cases} \\
 f_{ij}^{(n)} &= P\{X_n = j, X_k \neq j, k=1,2,\cdots,n-1|X_0=i\}, \ n\ge1
-
 \end{aligned}
+\end{equation}
 $$
 **(6) Recurrent/ Transient (常返/非常返)**
 
@@ -183,7 +184,9 @@ If state $i$ is an ergodic state and $f_{ii}^{(1)}=1$, then $i$ is called an abs
 
   For any states $i$, $j$, and $1\le n\le +\infty$, we have
   $$
+  \begin{equation}
   p_{ij}^{(n)}=\sum_{l=1}^{n}f_{ij}^{(l)}p_{jj}^{(n-l)}
+  \end{equation}
   $$
 
 - If $i\leftrightarrow j$ and $i$ is recurrent, then $f_{ji}=1$.
@@ -198,38 +201,48 @@ If state $i$ is an ergodic state and $f_{ii}^{(1)}=1$, then $i$ is called an abs
 
 **(1) A basic limit theorem of the Markov chain:**
 $$
+\begin{equation}
 \lim_{n\rightarrow\infty} p_{ii}^{(nd)} = \begin{cases}
 d/\mu_i, \text{ if $i$ is positive recurrent}\\
 0, \text{ if $i$ is null recurrent ($\mu_i=\infty$)}   \\
 0, \text{ if $i$ is tranisent}
 \end{cases}
+\end{equation}
 $$
 **(2) The limiting property of $p_{ij}^{(n)}$:**
 
 (i) If $j$ is null recurrent or transient, then for any $i\ge 0$, we have
 $$
+\begin{equation}
 \lim_{n\rightarrow\infty} p_{ij}^{(n)} = 0
+\end{equation}
 $$
 (ii) If $j$ is positive recurrent with period $d$, then for any $i\leftrightarrow j$, $i\ge0$, we have
 $$
+\begin{equation}
 \lim_{n\rightarrow\infty} p_{ij}^{(n)} = d/\mu_j
+\end{equation}
 $$
 (iii) For any $i,j\ge0$, we have
 $$
+\begin{equation}
 \lim_{n\rightarrow\infty} \frac{1}{n}\sum_{k=1}^n p_{ii}^{(k)} = \begin{cases}
 0, \text{ if $i$ is null recurrent or transient}   \\
 d/\mu_i, \text{ if $i$ is positive recurrent}
 \end{cases}
+\end{equation}
 $$
 **(3) Condition of positive recurrent:**
 
 In a Markov chain with a finite number of states, it is not possible for all states to be transient, nor can there be any null recurrent states.
 $$
+\begin{equation}
 \text{A Markov chain with a finite number of states } \begin{cases}
 \text{ not possible to have a null recurrent state}\\
 \text{ may have a transient state}   \\
 \text{ must have a positive state}
 \end{cases}
+\end{equation}
 $$
 $\Rightarrow$ An irreducible finite Markov chain is positive recurrent.
 
@@ -243,19 +256,23 @@ $\Rightarrow$ An irreducible finite Markov chain is positive recurrent.
 
 A probability distribution $\{p_j,j\ge0\}$ is said to be stationary for the Markov chain if
 $$
+\begin{equation}
 p_j = \sum_{i=0}^\infty p_i\cdot p_{ij}
+\end{equation}
 $$
 **(2) Limiting distribution**
 
-Markov chain is ergodic $\begin{cases}
+Markov chain is ergodic $\begin{equation}\begin{cases}
 \text{ All states are communicating}\\
 \text{ Aperiodic}   \\
 \text{ All states are positive recurrent}
-\end{cases}$
+\end{cases}\end{equation}$
 
 For an ergodic Markov chain, the limit
 $$
+\begin{equation}
 \lim_{n\rightarrow\infty}p_{ij}^{(n)}=\pi_j,j\ge0 \text{ (note that $\pi_j=1/\mu_j$)}
+\end{equation}
 $$
 is called its limiting distribution.
 
@@ -267,7 +284,9 @@ An irreducible aperiodic Markov chain belongs to one of the following two classe
 
 (ii) Or else, all states are positive recurrent (here this Markov chain is ergodic). Then, the limiting distribution
 $$
+\begin{equation}
 \pi_j=\lim_{n\rightarrow\infty}p_{ij}^{(n)}>0
+\end{equation}
 $$
 is a stationary distribution and there exists no other stationary distribution (unique).
 
@@ -285,11 +304,15 @@ is a stationary distribution and there exists no other stationary distribution (
 
 It is useful to introduce a parameter that measures the time required by a Markov chain for the distance to stationarity to be small. The mixing time is defined by
 $$
+\begin{equation}
 t_{\text {mix }}(\varepsilon):=\min \{t: d(t) \leq \varepsilon\},
+\end{equation}
 $$
 where
 $$
-d(t):=\max _{x \in \mathcal{X}}\left\|P^t(x, \cdot)-\pi\right\|_{\mathrm{TV}} .
+\begin{equation}
+d(t):=\max _{x \in \mathcal{X}}\left\|P^t(x, \cdot)-\pi\right\|_{\mathrm{TV}} 
+\end{equation}
 $$
 
 
@@ -297,11 +320,15 @@ $$
 
 Given a Markov chain ($X_t$) with state space $\mathcal{X}$, it is natural to define the hitting time $\tau_A$ of a subset $A ⊆ \mathcal{X}$ by
 $$
+\begin{equation}
 \tau_A:=\min \left\{t \geq 0: X_t \in A\right\}
+\end{equation}
 $$
 We will often find it useful to estimate the worst-case hitting times between states in a chain. Define
 $$
+\begin{equation}
 t_{\text {hit }}:=\max _{x, y \in \mathcal{X}} \mathbf{E}_x\left(\tau_y\right)
+\end{equation}
 $$
 
 
@@ -311,7 +338,9 @@ Let ($X_t$) be a finite Markov chain with state space $\mathcal{X}$. The cover t
 
 We also define the cover time as the mean of $\tau_{\text{cov}}$ from the worst-case initial state
 $$
+\begin{equation}
 t_{\mathrm{cov}}=\max _{x \in \mathcal{X}} \mathbf{E}_x \tau_{\mathrm{cov}}
+\end{equation}
 $$
 
 
