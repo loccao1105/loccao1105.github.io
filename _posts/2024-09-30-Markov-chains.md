@@ -193,10 +193,14 @@ $$
 
 Ergodic state 
 
-$\begin{cases}
+$$
+\begin{equation}
+\begin{cases}
 \text{Positive recurrent}\\
 \text{Aperiodic}
-\end{cases}$
+\end{cases}
+\end{equation}
+$$
 
 If state $i$ is an ergodic state and $f_{ii}^{(1)}=1$, then $i$ is called an absorbing state, in which case it is clear that $\mu_i=1$.
 
