@@ -28,10 +28,12 @@ Emm... It seems that this Markdown file isn't displaying correctly on this GitHu
 
 Consider a stochastic process $\{X_n,n=0,1,2,...\}$ that takes on a finite or countable number of possible values. If such a stochastic process is a Markov chain, then for all $n\ge0$ and all states $i_0,i_1,...,i_{n-1},i,j$, 
 $$
+\begin{equation}
 \begin{aligned}
 &P\left\{X_{n+1}=j \mid X_n=i, X_{n-1}=i_{n-1}, \cdots, X_1=i_1, X_0=i_0\right\}\\
 =&P\left\{X_{n+1}=j \mid X_n=i\right\}
 \end{aligned}
+\end{equation}
 $$
 **(2) Transition probability (转移概率)**
 
