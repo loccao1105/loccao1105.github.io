@@ -191,7 +191,9 @@ $$
 
 **(8) Ergodic (遍历)**
 
-Ergodic state $\begin{cases}
+Ergodic state 
+
+$\begin{cases}
 \text{Positive recurrent}\\
 \text{Aperiodic}
 \end{cases}$
