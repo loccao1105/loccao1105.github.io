@@ -49,13 +49,15 @@ When the Markov chain has a finite number of states, it is called a finite chain
 
 **(5) The matrix of transition probabilities $\pmb{P}$ (转移概率矩阵)**
 $$
+\begin{equation}
 P = \left[\begin{array}{cccc}
 p_{00} & p_{01} & p_{02} & \cdots \\
 p_{10} & p_{11} & p_{12} & \cdots \\
 \vdots & & & \\
 p_{i0} & p_{i1} & p_{i2} & \cdots \\
 \vdots & \vdots & & \vdots
-\end{array}\right] \text {. }
+\end{array}\right]
+\end{equation}
 $$
 We have (i) $p_{ij}\ge0, \ i,j\ge0$, (ii) $\sum_{j=0}^\infty p_{ij}=1,\ i=0,1,...$
 
@@ -67,13 +69,17 @@ We have (i) $p_{ij}\ge0, \ i,j\ge0$, (ii) $\sum_{j=0}^\infty p_{ij}=1,\ i=0,1,..
 
 The probability
 $$
-p_{ij}^{(n)} = P\left\{X_{m+n}=j \mid X_m=i\right\}, \ i,j\ge 0, \ m\ge 0, \ n\ge 1 
+\begin{equation}
+p_{ij}^{(n)} = P\left\{X_{m+n}=j \mid X_m=i\right\}, \ i,j\ge 0, \ m\ge 0, \ n\ge 1
+\end{equation}
 $$
 is called the $n$-step transition probability of the Markov chain, and $P^{(n)}=(p_{ij}^{(n)})$ is called the matrix of $n$-step transition probabilities.
 
 Additionally, it is stipulated that
 $$
+\begin{equation}
 p_{ij}^{(0)} =\begin{cases}0, & i \neq j \\ 1, & i=j\end{cases}
+\end{equation}
 $$
 The $n$-step transition probability refers to the probability that the system transitions from state $i$ to state $j$ after $n$ steps, without any requirements on the states passed during the intermediate $n-1$ steps.
 
