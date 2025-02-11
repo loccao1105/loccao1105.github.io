@@ -211,7 +211,7 @@ If state $i$ is an ergodic state and $f_{ii}^{(1)}=1$, then $i$ is called an abs
   For any states $i$, $j$, and $1\le n\le +\infty$, we have
 
   $$
-  \begin{equatio*}
+  \begin{equation*}
   p_{ij}^{(n)}=\sum_{l=1}^{n}f_{ij}^{(l)}p_{jj}^{(n-l)}
   \end{equation*}
   $$
