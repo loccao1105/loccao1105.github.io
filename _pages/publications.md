@@ -7,4 +7,3 @@ author_profile: true
 
 ***
 Publications will be updated as research progresses
-***
