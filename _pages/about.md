@@ -12,7 +12,7 @@ redirect_from:
 
 About me
 ------
-I am a third-year Data Science student at [University of Science, Vietnam National University – Ho Chi Minh City (HCMUS).](https://hcmus.edu.vn/), currently conducting my thesis research under the supervision of [Prof. Le Hoai Bac](https://scholar.google.com.vn/citations?user=UA_83MUAAAAJ&hl=vi).
+I am a third-year Data Science student at [VNU-HCM University of Science (HCMUS).](https://hcmus.edu.vn/), currently conducting my thesis research under the supervision of [Prof. Le Hoai Bac](https://scholar.google.com.vn/citations?user=UA_83MUAAAAJ&hl=vi).
 
 Research interests
 ------
