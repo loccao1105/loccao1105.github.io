@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Home Pages of Hao Liang"
+title: "Home Pages of Loc Cao"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
