@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Hao Liang (梁浩)"
+title                    : "Loc's Homepage"
 title_separator          : "-"
-name                     : &name "Hao Liang"
-description              : &description "A machine learning, signal processing and statistic fan"
-url                      : https://hauliang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Loc Cao"
+description              : &description "An AI enthusiast and researcher in explainable AI and AI in healthcare"
+url                      : https://loccao1105.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "HauLiang/hauliang.github.io"
+repository               : "loccao1105/loccao1105.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -40,7 +40,7 @@ staticman:
   path                   : "_data/comments/{options.slug}"
   requiredFields         : ['name', 'email', 'message']
   transforms:
-    email                : "haoliang@stu.xmu.edu.cn"
+    email                : "22127234@student.hcmus.edu.vn"
   generatedFields:
     date:
       type               : "date"
@@ -58,7 +58,7 @@ yandex_site_verification :
 # Social Sharing
 twitter:
   username               : &twitter
-facebook:
+facebook: 
   username               :
   app_id                 :
   publisher              :
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Hao Liang"
+  name             : "Loc Cao"
   avatar           : "myprofile.jpg"
-  bio              : "A machine learning, signal processing and statistic fan"
-  location         : "Guangzhou, CHN"
+  bio              : "An AI enthusiast and researcher in explainable AI and AI in healthcare"
+  location         : "Ho Chi Minh City, Vietnam"
   employer         :
  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.com/citations?user=PtWSpXIAAAAJ&hl=zh-CN"
-  email            : "haoliang2023@hotmail.com" 
-  researchgate     : "https://www.researchgate.net/profile/Hao-Liang-61" # example: "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    : 
+  email            : "22127234@student.hcmus.edu.vn"
+  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,14 +96,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "HauLiang"
+  github           : "loc110504"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "https://orcid.org/0000-0002-1570-3783"
+  linkedin         : 'https://www.linkedin.com/in/hoang-loc-cao-3a7502373/'
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
