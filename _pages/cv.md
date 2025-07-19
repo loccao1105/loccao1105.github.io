@@ -7,7 +7,8 @@ redirect_from:
   - /resume
 ---
 ***
-<small>Explore my complete curriculum vitae here: <a href="https://drive.google.com/file/d/18Wl1hQqDB_w4A1KWHBfUWGD0iOF8Ga9w/view?usp=sharing">detailed CV</a></small>
+**Explore my complete curriculum vitae here:** <a href="https://drive.google.com/file/d/18Wl1hQqDB_w4A1KWHBfUWGD0iOF8Ga9w/view?usp=sharing">detailed CV</a>
+
 ------
 
 Education
