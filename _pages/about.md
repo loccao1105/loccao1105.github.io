@@ -12,7 +12,7 @@ redirect_from:
 
 About me
 ------
-I am a third-year Data Science student at [VNU-HCM University of Science (HCMUS).](https://hcmus.edu.vn/), currently conducting my thesis research under the supervision of [Prof. Le Hoai Bac](https://scholar.google.com.vn/citations?user=UA_83MUAAAAJ&hl=vi).
+I am a third-year Data Science student at [VNU-HCM University of Science (HCMUS)](https://hcmus.edu.vn/), Vietnam, advised by Professor [Le Hoai Bac](https://scholar.google.com.vn/citations?user=UA_83MUAAAAJ&hl=vi).
 
 Research interests
 ------
@@ -26,6 +26,6 @@ Volleyball, football and gym
 
 For more
 ------
-💡 If you have additional research ideas or questions, I’d be glad to connect—just reach out! 🤝
+If you have advice or topics to discuss about AI, please feel free to connect with me! 🤗 🤝
 
 (__Email__: *22127234@student.hcmus.edu.vn*)
