@@ -7,14 +7,14 @@ redirect_from:
   - /resume
 ---
 ***
-<small>Explore my complete curriculum vitae here: <a href="https://drive.google.com/file/d/18Wl1hQqDB_w4A1KWHBfUWGD0iOF8Ga9w/view?usp=sharing">CV</a></em></small>
+<small>Explore my complete curriculum vitae here: <a href="https://drive.google.com/file/d/18Wl1hQqDB_w4A1KWHBfUWGD0iOF8Ga9w/view?usp=sharing">detailed CV</a></small>
 ------
 
 Education
 ------
-* **Bachelor of Science (B.S.)** in **Data Science**, at [VNU-HCM University of Science (HCMUS)](https://hcmus.edu.vn/), **Vienam**, *2022 - 2026 (expected)*
+* **Bachelor of Science (B.S.)** in **Data Science**, at [VNU-HCM University of Science](https://hcmus.edu.vn/), **Vienam**, *2022 - 2026 (expected)*
   * **GPA:** 3.60/4.0
-  * **Thesis:** Explainable AI for Text Emotion Analysis
+  * **Thesis:** Explainable AI for Text Emotion Analysis (Ongoing)
 
 Work Experience
 ------
